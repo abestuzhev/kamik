@@ -1,0 +1,7 @@
+.l-layout {
+  outline: 1px solid #ccc; }
+
+.l-layout {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative; }

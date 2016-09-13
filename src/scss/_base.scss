@@ -1,0 +1,10 @@
+%outline {
+  outline: 1px solid #ccc;
+}
+
+.l-layout {
+  @extend %outline;
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
