@@ -1,0 +1,134 @@
+
+.l-grid {
+  text-align: justify;
+  @include full-width;
+
+  &_item {
+    display: inline-block;
+  }//_item
+
+}
+
+.c-search {
+  display: block;
+  width: 100%;
+  bottom: 0;
+  outline: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 10px 15px;
+  padding-right: 30px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    left: 4px;
+    right: 9px;
+    background: url($img-dir + 'search-icin-mouseover.png') left top no-repeat;
+  }
+}
+
+.c-menu {
+  text-align: justify;
+  @include full-width;
+
+  &_item {
+    display: inline-block;
+  } //_item
+
+  &_link {
+    display: block;
+    padding: 8px 10px;
+    color: #8F9699;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: #DBDBDB;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #6384A2;
+      color: #fff;
+      text-decoration: none;
+      @extend %transition;
+    }
+
+    &--icon {
+      position: relative;
+      padding-left: 37px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 19px;
+        left: 10px;
+        top: 9px;
+        background: url($img-dir + 'menu-icon-all.png') left top no-repeat;
+
+      }
+    }
+  }//_link
+
+
+}
+
+//
+.c-number-text,
+.c-email-text,
+.c-place-text {
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  padding-left: 15px;
+  position: relative;
+  margin-right: 15px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 13px;
+    left: 0;
+    top: 1px;
+    background: url($img-dir + 'contact-icon.png') 0 0 no-repeat;
+  }
+}
+
+.c-email-text::after {
+  content: '';
+  background-position: -13px 0;
+}
+
+.c-place-text::after {
+  content: '';
+  background-position: -23px 0;
+}
+
+//c-button
+.c-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  // width: 152px;
+  // height: 25px;
+  background-color: #F6AE00;
+  box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69), inset 0 0 27px rgba(252, 95, 0, 0.93);
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #F6AE00;
+    box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69);
+  }
+}

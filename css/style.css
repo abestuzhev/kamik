@@ -1,2 +1,259 @@
+body {
+  font-size: 12px;
+  font-family: "Exo 2", sans-serif;
+  background-color: #fff;
+  color: #000; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+img, video {
+  max-width: 100%;
+  height: auto; }
+
+.c-menu_link:hover {
+  transition: all .2s ease-out; }
+
 .l-layout {
-  max-width: 973px; }
+  outline: 1px solid #ccc; }
+
+.l-layout {
+  max-width: 970px;
+  margin: 0 auto;
+  position: relative; }
+
+input {
+  bottom: 0;
+  outline: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 10px 15px; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Thin Condensed"), local("Exo2-ThinCondensed"), url("../fonts/exo2thincondensed.woff2") format("woff2"), url("../fonts/exo2thincondensed.woff") format("woff"), url("../fonts/exo2thincondensed.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Extra Light Condensed"), local("Exo2-ExtraLightCondensed"), url("../fonts/exo2extralightcondensed.woff2") format("woff2"), url("../fonts/exo2extralightcondensed.woff") format("woff"), url("../fonts/exo2extralightcondensed.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Light Condensed"), local("Exo2-LightCondensed"), url("../fonts/exo2lightcondensed.woff2") format("woff2"), url("../fonts/exo2lightcondensed.woff") format("woff"), url("../fonts/exo2lightcondensed.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Regular Condensed"), local("Exo2-RegularCondensed"), url("../fonts/exo2regularcondensed.woff2") format("woff2"), url("../fonts/exo2regularcondensed.woff") format("woff"), url("../fonts/exo2regularcondensed.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Medium Condensed"), local("Exo2-MediumCondensed"), url("../fonts/exo2mediumcondensed.woff2") format("woff2"), url("../fonts/exo2mediumcondensed.woff") format("woff"), url("../fonts/exo2mediumcondensed.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Semi Bold Condensed"), local("Exo2-SemiBoldCondensed"), url("../fonts/exo2semiboldcondensed.woff2") format("woff2"), url("../fonts/exo2semiboldcondensed.woff") format("woff"), url("../fonts/exo2semiboldcondensed.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Bold Condensed"), local("Exo2-BoldCondensed"), url("../fonts/exo2boldcondensed.woff2") format("woff2"), url("../fonts/exo2boldcondensed.woff") format("woff"), url("../fonts/exo2boldcondensed.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Extra Bold Condensed"), local("Exo2-ExtraBoldCondensed"), url("../fonts/exo2extraboldcondensed.woff2") format("woff2"), url("exo2extraboldcondensed.woff") format("woff"), url("exo2extraboldcondensed.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo 2 Condensed';
+  src: local("Exo 2 Black Condensed"), local("Exo2-BlackCondensed"), url("../fonts/exo2blackcondensed.woff2") format("woff2"), url("exo2blackcondensed.woff") format("woff"), url("exo2blackcondensed.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+.l-grid {
+  text-align: justify; }
+  .l-grid::after {
+    content: '';
+    width: 100%;
+    display: inline-block; }
+  .l-grid_item {
+    display: inline-block; }
+
+.c-search {
+  display: block;
+  width: 100%;
+  bottom: 0;
+  outline: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 10px 15px;
+  padding-right: 30px;
+  position: relative; }
+  .c-search::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    left: 4px;
+    right: 9px;
+    background: url("../img/search-icin-mouseover.png") left top no-repeat; }
+
+.c-menu {
+  text-align: justify; }
+  .c-menu::after {
+    content: '';
+    width: 100%;
+    display: inline-block; }
+  .c-menu_item {
+    display: inline-block; }
+  .c-menu_link {
+    display: block;
+    padding: 8px 10px;
+    color: #8F9699;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: #DBDBDB;
+    border-radius: 4px; }
+    .c-menu_link:hover {
+      background-color: #6384A2;
+      color: #fff;
+      text-decoration: none; }
+    .c-menu_link--icon {
+      position: relative;
+      padding-left: 37px; }
+      .c-menu_link--icon::after {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 19px;
+        left: 10px;
+        top: 9px;
+        background: url("../img/menu-icon-all.png") left top no-repeat; }
+
+.c-number-text,
+.c-email-text,
+.c-place-text {
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  padding-left: 15px;
+  position: relative;
+  margin-right: 15px; }
+  .c-number-text::after,
+  .c-email-text::after,
+  .c-place-text::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 13px;
+    left: 0;
+    top: 1px;
+    background: url("../img/contact-icon.png") 0 0 no-repeat; }
+
+.c-email-text::after {
+  content: '';
+  background-position: -13px 0; }
+
+.c-place-text::after {
+  content: '';
+  background-position: -23px 0; }
+
+.c-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  background-color: #F6AE00;
+  box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69), inset 0 0 27px rgba(252, 95, 0, 0.93);
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 30px; }
+  .c-button:hover {
+    background-color: #F6AE00;
+    box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69); }
+
+.header {
+  padding-top: 10px; }
+  .header_title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .header_text {
+    margin-bottom: 10px;
+    margin-left: 10px; }
+
+.l-header_search {
+  margin: 10px 0; }
+
+.header_body {
+  text-align: justify; }
+  .header_body::after {
+    content: '';
+    width: 100%;
+    display: inline-block; }
+
+.l-header_logo,
+.l-header_contact,
+.l-header_basket {
+  display: inline-block; }
+  .l-header_logo::after,
+  .l-header_contact::after,
+  .l-header_basket::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.l-header_basket .basket_img {
+  width: 33px;
+  height: 31px;
+  float: left;
+  margin-right: 10px;
+  background: url("../img/basket-icon.png") 0 0 no-repeat; }
+
+.l-header_menu {
+  margin-bottom: 25px; }
+
+.l-header_logo {
+  vertical-align: top;
+  width: 300px; }
+
+.l-header_contact {
+  padding-top: 10px; }

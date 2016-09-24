@@ -1,0 +1,16 @@
+
+@mixin clear {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin full-width {
+  &::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+}

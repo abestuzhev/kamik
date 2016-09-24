@@ -1,9 +1,9 @@
-// @import "base";
-// @import "components";
-// @import "header";
-// @import "footer";
+@import "base";
+@import "mixins";
+@import "fonts";
+@import "components";
+@import "main";
+@import "header";
+@import "footer";
 
 
-.l-layout {
-  max-width: 973px;
-}

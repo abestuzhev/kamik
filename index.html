@@ -3,33 +3,156 @@
   <head>
     <meta charset="utf-8">
     <title>Kamik group</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,600,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="header"></div>
     <div class="header">
       <div class="l-layout">
-        <div class="header-search"></div>
-        <div class="header-nav"></div>
-        <div class="header_item">
-          <div class="header_logo"></div>
-          <div class="header_contact"></div>
-          <div class="header_basket"></div>
+        <div class="l-header_search"><input type="text" class="c-search" placeholder="Поиск по сайту..."></div>
+        <div class="l-header_menu">
+          <ul class="c-menu">
+            <li class="c-menu_item"><a href="#" class="c-menu_link c-menu_link--icon">Все оборудование</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">Услуги</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">Сервис</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">Оплата-Доставка</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">Гарантия</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">О компании</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">Портфолио</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">Дилерам</a></li>
+            <li class="c-menu_item"><a href="#" class="c-menu_link">Контакты</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="l-header_equipment">
-        <div class="l-layout">
-          <div class="l-header_equipment_grid">
-            <ul class="hello">
-              <li><a href="#">hello</a></li>
-              <li><a href="#">world</a></li>
-              <li><a href="#"></a></li>
-            </ul>
+        <div class="header_body">
+          <div class="l-header_logo"><img src="img/logo.png" alt=""></div>
+          <div class="l-header_contact">
+            <h3 class="header_title">Контакты:</h3>
+            <p class="header_text"><span class="c-number-text">Офис продаж: +7(499) 641-11-11;</span><span>Сервисная служба: +7(499) 641- 22- 22;</span></p>
+            <p class="header_text"><span class="c-email-text">info@kamik-group.ru</span><span class="c-place-text">г. Москва, ул. 2-я Звенигородская, д. 12, стр.5</span></p>
+            <a href="#" class="c-button">Заказать звонок</a>
           </div>
+          <div class="l-header_basket">
+            <h3 class="header_title">Корзина:</h3>
+            <div class="basket_img"></div>
+            <p class="header_text"><span class="basket_quantity">3</span>шт.</p>
+            <p class="header_text"><span class="basket_total">21 750</span>руб.</p>
+            <a href="#" class="c-button">ПЕрейти в корзину</a>
+          </div>
+        </div>
+      </div><!-- l-layout -->
+      <div class="l-header-nav">
+        <div class="l-layout">
+          <ul class="header-nav">
+            <li class="header-nav_item"><a href="#" class="header-nav_link">Оборудоване по типу</a></li>
+            <li class="header-nav_item"><a href="#" class="header-nav_link">Оборудование по предприятию</a></li>
+            <li class="header-nav_item"><a href="#" class="header-nav_link">Оборудование от Камик</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  <script src="js/main.js"></script>
+    <!-- END header -->
+
+
+
+    <!-- START main -->
+    <div class="main">
+      <div class="l-layout">
+        <div class="l-adunit"></div><!--END l-adunit-->
+        <div class="top-slider"></div><!--END top-slider-->
+        <div class="l-services">
+          <div class="services"></div>
+        </div><!--END services-->
+        <div class="l-filter-equipment">
+
+        </div><!--END l-filter-equipment-->
+        <div class="equipment-slider"></div><!--END equipment-slider-->
+        <div class="about"></div><!--END about-->
+        <div class="partners"></div><!--END -->
+        <div class="about-number"></div><!--END -->
+        <div class="call"></div> <!--END call-->
+      </div> <!--END l-layout-->
+    </div>
+     <!-- END main -->
+
+
+
+    <!-- START footer -->
+    <div class="footer">
+      <div class="l-layout">
+        <div class="l-grid">
+          <div class="l-grid_item">
+            <div class="footer-column">
+              <h3 class="footer-column_title"></h3>
+              <ul class="footer-column_list">
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+              </ul>
+            </div>
+          </div><!-- l-grid_item -->
+          <div class="l-grid_item">
+            <div class="footer-column">
+              <h3 class="footer-column_title"></h3>
+              <ul class="footer-column_list">
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+              </ul>
+            </div>
+          </div><!-- l-grid_item -->
+          <div class="l-grid_item">
+            <div class="footer-column">
+              <h3 class="footer-column_title"></h3>
+              <ul class="footer-column_list">
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+                <li class="footer-column_item"><a href="#" class="footer-column_link"></a></li>
+              </ul>
+            </div>
+          </div><!-- l-grid_item -->
+          <div class="l-grid_item">
+            <div class="footer-contact">
+              <div class="footer-contact_number"></div>
+              <div class="footer-contact_text">
+                <ul>
+                  <li><span class="c-number-text"></span></li>
+                  <li><span class="c-email-text"></li>
+                  <li><span class="c-place-text"></span></li>
+                </ul>
+              </div>
+              <div class="footer-contact_social">
+                <div class="social_title"></div>
+                <a href="#" class="vk"></a>
+                <a href="#" class="ok"></a>
+                <a href="#" class="fb"></a>
+              </div>
+            </div>
+          </div><!-- l-grid_item -->
+        </div><!-- l-grid -->
+        <div class="footer_copyright">
+          <p>© 2016 Камик</p>
+          <p>Копирование и использование любых материалов с сайта http://kamik-group.ru/ ЗАПРЕЩЕНО.</p>
+        </div>
+      </div> <!-- l-layout -->
+    </div> <!-- END footer -->
+
+    <script src="js/main.js"></script>
   </body>
 </html>
