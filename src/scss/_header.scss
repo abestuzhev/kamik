@@ -20,6 +20,7 @@
 
 .l-header_search {
   margin: 10px 0;
+  position: relative;
 }
 
 .header_body {
@@ -45,7 +46,7 @@
 
 
 .l-header_menu {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .l-header_logo {
@@ -58,15 +59,42 @@
 }
 
 .l-header-nav {
-
+  background-color: #7e96a2;
 }
 
 .header-nav {
-  &_item {
+  text-align: justify;
+  @include full-width;
+  padding: 6px 0;
+  font-size: 0;
 
+  &_item {
+    display: inline-block;
+
+    &:hover {
+      background-color: #6384a2;
+      @extend %transition;
+    }
   }//_item
 
   &_link {
+    display: block;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 15px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 16px;
+      right: 10px;
+      top:12px;
+      background: url($img-dir + 'nav-icon.png') left top no-repeat;
+    }
 
   }//_link
 }

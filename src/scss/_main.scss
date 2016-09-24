@@ -1,0 +1,39 @@
+.l-ad-unit {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.ad-unit_title {
+  color: #37474F;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.ad-unit_item {
+  display: inline-block;
+  margin-right: 70px;
+  @include clear;
+
+  .ad-unit_img {
+    width: 37px;
+    height: 44px;
+    float: left;
+  }//ad-unit_img
+
+  .ad-unit_body {
+    float: right;
+
+    .ad-unit_text {
+      color: #6A6A6A;
+      font-family: 'Exo 2 Condensed', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }//ad-unit_text
+  }//ad-unit_body
+
+
+}

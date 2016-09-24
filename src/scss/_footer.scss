@@ -1,9 +1,31 @@
 .footer {
+  background: url($img-dir + 'footer-bg.jpg') left top no-repeat;
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 20px;
 
   &-column {
 
     &_title {
+      color: #FFF;
+      font-family: "Exo 2";
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+      position: relative;
+      margin-bottom: 10px;
 
+      &::after {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 4px;
+        left: 0px;
+        bottom: 0px;
+        background: url($img-dir + 'deco.png') left top no-repeat;
+
+      }
     }//_title
 
     &_list {
@@ -11,30 +33,70 @@
     }//_list
 
     &_item {
-
+      margin-bottom: 7px;
     }//_item
 
     &_link {
+      color: #FFF;
+      font-size: 12px;
+      font-weight: 400;
 
+      &:hover {
+        color: #F9AB00;
+        @extend %transition;
+      }
     }//_link
 
   }//footer-column
 
   &-contact {
-    &_number {
+    color: #fff;
 
+    &_number {
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        left: 0px;
+        top: 5px;
+        background: url($img-dir + 'contact-icon-white.png') 0 0 no-repeat;
+      }
+      p {
+        font-size: 17px;
+        font-weight: 300;
+      }
     }//_number
 
     &_text {
-
+      margin-bottom: 20px;
     }//_text
 
     &_social {
-      
+      .social_title {
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+
+      svg {
+        fill: #fff;
+      }
     }//_social
   }//footer-contact
 
   &_copyright {
+    color: #fff;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
 
+    p {
+      margin-bottom: 3px;
+    }
   }//_copyright
 }

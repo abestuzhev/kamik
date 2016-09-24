@@ -4,6 +4,7 @@
   @include full-width;
 
   &_item {
+    vertical-align: top;
     display: inline-block;
   }//_item
 
@@ -20,14 +21,22 @@
   padding-right: 30px;
   position: relative;
 
-  &::after {
-    content: '';
+
+  &-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
     position: absolute;
     width: 12px;
     height: 8px;
-    left: 4px;
+    top: 50%;
+    margin-top: -4px;
     right: 9px;
-    background: url($img-dir + 'search-icin-mouseover.png') left top no-repeat;
+    background: url($img-dir + 'search-icin-mouseover.png') 0 0 no-repeat;
+  }
+
+  &:focus .c-search-button {
+    background: url($img-dir + 'search-icin.png') 0 0 no-repeat;
   }
 }
 
@@ -57,6 +66,7 @@
       @extend %transition;
     }
 
+
     &--icon {
       position: relative;
       padding-left: 37px;
@@ -68,8 +78,13 @@
         height: 19px;
         left: 10px;
         top: 9px;
-        background: url($img-dir + 'menu-icon-all.png') left top no-repeat;
+        background: url($img-dir + 'menu-icon-all-default.png') left top no-repeat;
+      }
 
+      &:hover:after {
+        content: '';
+        background: url($img-dir + 'menu-icon-all.png') left top no-repeat;
+        @extend %transition;
       }
     }
   }//_link
@@ -77,11 +92,7 @@
 
 }
 
-//
-.c-number-text,
-.c-email-text,
-.c-place-text {
-  color: #000;
+.c-text-icon {
   font-size: 12px;
   font-weight: 300;
   display: inline-block;
@@ -96,19 +107,34 @@
     height: 13px;
     left: 0;
     top: 1px;
-    background: url($img-dir + 'contact-icon.png') 0 0 no-repeat;
   }
 }
 
-.c-email-text::after {
-  content: '';
-  background-position: -13px 0;
+.c-text-icon--number::after {
+  background: url($img-dir + 'contact-icon.png') 0 0 no-repeat;
 }
 
-.c-place-text::after {
-  content: '';
-  background-position: -23px 0;
+.c-text-icon--email::after {
+  background: url($img-dir + 'contact-icon.png') -13px 0 no-repeat;
 }
+
+.c-text-icon--place::after {
+  background: url($img-dir + 'contact-icon.png') -23px 0 no-repeat;
+}
+
+
+.c-text-icon--email-white::after {
+  background: url($img-dir + 'contact-icon-white.png') -15px 0 no-repeat;
+}
+
+.c-text-icon--place-white::after {
+  background: url($img-dir + 'contact-icon-white.png') -26px 0 no-repeat;
+}
+
+.c-text-icon--time-white::after {
+  background: url($img-dir + 'contact-icon-white.png') -38px 0 no-repeat;
+}
+
 
 //c-button
 .c-button {
@@ -117,8 +143,6 @@
   padding: 5px 10px;
   outline: none;
   border: none;
-  // width: 152px;
-  // height: 25px;
   background-color: #F6AE00;
   box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69), inset 0 0 27px rgba(252, 95, 0, 0.93);
   color: #FFF;
