@@ -1,5 +1,15 @@
+.c-h1_title {
+  text-align: left;
+  color: #6C8795;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
 
-.l-grid {
+.l-list {
   text-align: justify;
   @include full-width;
 
@@ -7,7 +17,16 @@
     vertical-align: top;
     display: inline-block;
   }//_item
+}
 
+.l-grid {
+  font-size: 0;
+
+  &_item {
+    font-size: 12px;
+    vertical-align: top;
+    display: inline-block;
+  }//_item
 }
 
 .c-search {
@@ -156,3 +175,85 @@
     box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69);
   }
 }
+
+
+//c-service
+.c-service {
+  font-size: 0;
+
+  &_item {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    outline: 1px solid #ccc;
+    margin-bottom: 21px;
+  }//_item
+
+  &_img {
+    text-align: center;
+    padding-bottom: 32px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 7px;
+      right: 41%;
+      bottom: 0;
+      background-color: #ccc;
+    }
+  }//_img
+
+  &_title {
+    text-align: center;
+    color: #6C8795;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }//_title
+}
+
+//c-link-more
+.c-link-more {
+  color: #202020;
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 18px;
+  margin-top: 5px;
+
+  &:hover {
+    text-decoration: underline;
+    @extend %transition;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    right: 0;
+    bottom: 25%;
+    background-color: #ccc;
+    background: url($img-dir + 'button-icon.png') left top no-repeat;
+  }
+}
+
+
+//c-company-list
+.c-company-list {
+  text-align: justify;
+  @include full-width;
+
+  .c-company_item {
+    width: 140px;
+    height: 70px;
+    display: inline-block;
+    border: 1px solid #cfcfcf;
+  }
+}//c-company-list

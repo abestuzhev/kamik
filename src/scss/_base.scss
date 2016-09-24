@@ -28,12 +28,23 @@ p {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+  text-align: left;
+  line-height: 17px;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  color: #6C8795;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 h3 {
