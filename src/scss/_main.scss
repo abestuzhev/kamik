@@ -48,19 +48,138 @@
   padding-top: 20px;
 }
 
+//l-equipment
+.l-equipment {
+  padding: 20px 0px;
+  background-color: #f2f2f2;
+}
+
+
 //about
-.about {
+.l-about {
+  vertical-align: top;
   display: inline-block;
-  width: 50%;
+  width: 49%;
   padding-right: 30px;
+  margin-bottom: 50px;
+}
+
+.about {
+  margin-bottom: 30px;
 }
 
 //partners clients
 .l-partners {
+  vertical-align: top;
   display: inline-block;
   padding-left: 30px;
-  width: 50%;
+  width: 49%;
+  margin-bottom: 50px;
 }
 .partners {
   margin-bottom: 30px;
+}
+
+//discount
+.discount {
+  @include clear;
+
+  &_img {
+    height: 145px;
+    color: #F9AB00;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 135px;
+    font-weight: 700;
+    text-transform: uppercase;
+    float: left;
+    width: 105px;
+    margin-right: 10px;
+  }//_img
+
+  &_body {
+    // float: left;
+  }//_body
+
+  &_title {
+    color: #F9AB00;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }//_title
+}
+
+//about-number
+.about-number {
+  .c-h1_title {
+    text-align: center;
+  }
+}
+
+//about-number
+.about-number {
+  margin-bottom: 20px;
+}
+
+.kamik-red {color:$kamik-red;}
+.kamik-purple {color:$kamik-purple;}
+.kamik-blue {color:$kamik-blue;}
+.kamik-orange {color:$kamik-orange;}
+
+.advantages_item {
+  // display: inline-block;
+  // margin-right: 70px;
+
+  .advantages_number {
+    text-align: left;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }//_number
+
+  .advantages_text {
+    text-align: left;
+    white-space: nowrap;
+    color: #6F8A97;
+    font-size: 17px;
+    font-weight: 300;
+  }//_text
+}
+
+
+//call
+.call {
+  padding: 30px 0 10px;
+  background: url($img-dir + 'call-bg.jpg') 0 0 no-repeat;
+  background-size: cover;
+
+  &_item {
+    text-align: center;
+  }//_item
+
+  &_img {
+    margin-bottom: 30px;
+    text-align: center;
+  }//_img
+
+  .call-field {
+
+    width: 255px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &--inline {
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  &_full-width {
+    width: 100%;
+    display: block;
+  }
 }

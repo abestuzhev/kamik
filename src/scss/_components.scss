@@ -108,7 +108,9 @@
     }
   }//_link
 
-
+  &--equipment {
+    margin-bottom: 10px;
+  }
 }
 
 .c-text-icon {
@@ -170,6 +172,25 @@
   text-transform: uppercase;
   border-radius: 30px;
 
+  &--expressive {
+    padding: 10px 26px;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 18px;
+    background-color: #F6AE00;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.27);
+    box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69), 0 0 0 6px rgba(0, 0, 0, 0.07), inset 0 0 27px rgba(252, 95, 0, 0.93);
+
+    span {
+      font-family: "Exo 2";
+      display: block;
+      text-transform: none;
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
   &:hover {
     background-color: #F6AE00;
     box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69);
@@ -187,6 +208,36 @@
     width: 20%;
     outline: 1px solid #ccc;
     margin-bottom: 21px;
+
+    &:nth-child(n) {
+      .c-service_img::after {
+        background: url($img-dir + 'service-icon-red.png') left top no-repeat;
+      }
+    }
+
+    &:nth-child(2n) {
+      .c-service_img::after {
+        background: url($img-dir + 'service-icon-purple.png') left top no-repeat;
+      }
+    }
+
+    &:nth-child(3n) {
+      .c-service_img::after {
+        background: url($img-dir + 'service-icon-blue.png') left top no-repeat;
+      }
+    }
+
+    &:nth-child(4n) {
+      .c-service_img::after {
+        background: url($img-dir + 'service-icon-orange.png') left top no-repeat;
+      }
+    }
+
+    &:nth-child(5n) {
+      .c-service_img::after {
+        background: url($img-dir + 'service-icon-black.png') left top no-repeat;
+      }
+    }
   }//_item
 
   &_img {
@@ -215,6 +266,8 @@
     text-transform: uppercase;
   }//_title
 }
+
+//
 
 //c-link-more
 .c-link-more {
@@ -249,11 +302,46 @@
 .c-company-list {
   text-align: justify;
   @include full-width;
+  font-size: 0px;
 
   .c-company_item {
+    overflow: hidden;
     width: 140px;
     height: 70px;
+    margin-bottom: 10px;
     display: inline-block;
     border: 1px solid #cfcfcf;
   }
 }//c-company-list
+
+//c-title-icon
+.c-title-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+//c-call-input
+.c-call-input {
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  display: block;
+
+  &--phone {
+    background-image: url($img-dir + 'phone24x24.png');
+    background-position:  7px 8px;
+  }
+
+  &--time {
+    background-image: url($img-dir + 'time24x24.png');
+    background-position:  7px 8px;
+  }
+}

@@ -59,7 +59,8 @@ input {
   outline: 0;
   border: 1px solid #CCC;
   border-radius: 4px;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  width: 100%; }
 
 .vk svg:hover #vk {
   fill: #4d76a1; }
@@ -78,6 +79,66 @@ input {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-right: 5px; }
+
+.c-card-equipment {
+  width: 155px;
+  height: 349px;
+  background-color: #FFF;
+  border: 2px solid #EBEBEB;
+  padding: 10px;
+  padding-bottom: 15px;
+  position: relative; }
+  .c-card-equipment_img {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 15px;
+    position: relative; }
+    .c-card-equipment_img img {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .c-card-equipment_title {
+    text-align: left;
+    color: #000;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .c-card-equipment_text {
+    text-align: left;
+    color: #898989;
+    font-family: "Exo 2";
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 300; }
+    .c-card-equipment_text a {
+      display: block;
+      margin-bottom: 5px;
+      color: #000; }
+      .c-card-equipment_text a:last-child {
+        margin-bottom: 20px; }
+      .c-card-equipment_text a:hover {
+        text-decoration: underline; }
+
+.c-card-round {
+  position: absolute;
+  bottom: 15px;
+  left: 10px; }
+  .c-card-round span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #000; }
+    .c-card-round span:nth-child(2) {
+      margin: 0 1px; }
 
 @font-face {
   font-family: 'Exo 2 Condensed';
@@ -220,6 +281,8 @@ input {
       .c-menu_link--icon:hover:after {
         content: '';
         background: url("../img/menu-icon-all.png") left top no-repeat; }
+  .c-menu--equipment {
+    margin-bottom: 10px; }
 
 .c-text-icon {
   font-size: 12px;
@@ -267,6 +330,21 @@ input {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 30px; }
+  .c-button--expressive {
+    padding: 10px 26px;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 18px;
+    background-color: #F6AE00;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.27);
+    box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69), 0 0 0 6px rgba(0, 0, 0, 0.07), inset 0 0 27px rgba(252, 95, 0, 0.93); }
+    .c-button--expressive span {
+      font-family: "Exo 2";
+      display: block;
+      text-transform: none;
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 300; }
   .c-button:hover {
     background-color: #F6AE00;
     box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69); }
@@ -279,6 +357,16 @@ input {
     width: 20%;
     outline: 1px solid #ccc;
     margin-bottom: 21px; }
+    .c-service_item:nth-child(n) .c-service_img::after {
+      background: url("../img/service-icon-red.png") left top no-repeat; }
+    .c-service_item:nth-child(2n) .c-service_img::after {
+      background: url("../img/service-icon-purple.png") left top no-repeat; }
+    .c-service_item:nth-child(3n) .c-service_img::after {
+      background: url("../img/service-icon-blue.png") left top no-repeat; }
+    .c-service_item:nth-child(4n) .c-service_img::after {
+      background: url("../img/service-icon-orange.png") left top no-repeat; }
+    .c-service_item:nth-child(5n) .c-service_img::after {
+      background: url("../img/service-icon-black.png") left top no-repeat; }
   .c-service_img {
     text-align: center;
     padding-bottom: 32px;
@@ -322,16 +410,43 @@ input {
     background: url("../img/button-icon.png") left top no-repeat; }
 
 .c-company-list {
-  text-align: justify; }
+  text-align: justify;
+  font-size: 0px; }
   .c-company-list::after {
     content: '';
     width: 100%;
     display: inline-block; }
   .c-company-list .c-company_item {
+    overflow: hidden;
     width: 140px;
     height: 70px;
+    margin-bottom: 10px;
     display: inline-block;
     border: 1px solid #cfcfcf; }
+
+.c-title-icon {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.c-call-input {
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  display: block; }
+  .c-call-input--phone {
+    background-image: url("../img/phone24x24.png");
+    background-position: 7px 8px; }
+  .c-call-input--time {
+    background-image: url("../img/time24x24.png");
+    background-position: 7px 8px; }
 
 .l-ad-unit {
   padding-top: 15px;
@@ -368,18 +483,107 @@ input {
 .l-services {
   padding-top: 20px; }
 
-.about {
+.l-equipment {
+  padding: 20px 0px;
+  background-color: #f2f2f2; }
+
+.l-about {
+  vertical-align: top;
   display: inline-block;
-  width: 50%;
-  padding-right: 30px; }
+  width: 49%;
+  padding-right: 30px;
+  margin-bottom: 50px; }
+
+.about {
+  margin-bottom: 30px; }
 
 .l-partners {
+  vertical-align: top;
   display: inline-block;
   padding-left: 30px;
-  width: 50%; }
+  width: 49%;
+  margin-bottom: 50px; }
 
 .partners {
   margin-bottom: 30px; }
+
+.discount::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.discount_img {
+  height: 145px;
+  color: #F9AB00;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 135px;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: left;
+  width: 105px;
+  margin-right: 10px; }
+
+.discount_title {
+  color: #F9AB00;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.about-number .c-h1_title {
+  text-align: center; }
+
+.about-number {
+  margin-bottom: 20px; }
+
+.kamik-red {
+  color: #f28973; }
+
+.kamik-purple {
+  color: #c08ebf; }
+
+.kamik-blue {
+  color: #53c5e0; }
+
+.kamik-orange {
+  color: #f9bc79; }
+
+.advantages_item .advantages_number {
+  text-align: left;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+.advantages_item .advantages_text {
+  text-align: left;
+  white-space: nowrap;
+  color: #6F8A97;
+  font-size: 17px;
+  font-weight: 300; }
+
+.call {
+  padding: 30px 0 10px;
+  background: url("../img/call-bg.jpg") 0 0 no-repeat;
+  background-size: cover; }
+  .call_item {
+    text-align: center; }
+  .call_img {
+    margin-bottom: 30px;
+    text-align: center; }
+  .call .call-field {
+    width: 255px;
+    margin-bottom: 20px;
+    text-align: center; }
+    .call .call-field--inline {
+      display: inline-block;
+      margin-right: 10px;
+      margin-left: 10px; }
+  .call_full-width {
+    width: 100%;
+    display: block; }
 
 .header {
   padding-top: 10px; }
