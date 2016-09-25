@@ -53,7 +53,25 @@
   padding: 20px 0px;
   background-color: #f2f2f2;
 }
+#Container .mix {
+	display: none;
+}
 
+.active {
+  transform: scale(1.02);
+  @extend %transition;
+
+  &:hover a{
+    background-color: #f9ab00;
+    color: #000;
+  }
+  a {
+    background-color: #f9ab00;
+    border-radius: 0;
+    color: #000;
+    font-weight: 700;
+  }
+}
 
 //about
 .l-about {

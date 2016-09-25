@@ -43,7 +43,7 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-.c-menu_link:hover, .c-menu_link--icon:hover:after, .c-link-more:hover, .header-nav_item:hover, .footer-column_link:hover {
+.c-menu_link:hover, .c-menu_link--icon:hover:after, .c-link-more:hover, .active, .header-nav_item:hover, .footer-column_link:hover {
   transition: all .2s ease-out; }
 
 .l-layout {
@@ -111,6 +111,8 @@ input {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 20px; }
+    .c-card-equipment_title a {
+      color: #000; }
   .c-card-equipment_text {
     text-align: left;
     color: #898989;
@@ -216,10 +218,15 @@ input {
 
 .l-grid {
   font-size: 0; }
+  .l-grid:last-child {
+    margin-right: 0; }
+  .l-grid:first-child {
+    margin-left: 0; }
   .l-grid_item {
     font-size: 12px;
     vertical-align: top;
-    display: inline-block; }
+    display: inline-block;
+    margin: 0 5px; }
 
 .c-search {
   display: block;
@@ -355,7 +362,6 @@ input {
     vertical-align: top;
     display: inline-block;
     width: 20%;
-    outline: 1px solid #ccc;
     margin-bottom: 21px; }
     .c-service_item:nth-child(n) .c-service_img::after {
       background: url("../img/service-icon-red.png") left top no-repeat; }
@@ -486,6 +492,22 @@ input {
 .l-equipment {
   padding: 20px 0px;
   background-color: #f2f2f2; }
+
+#Container .mix {
+  display: none; }
+
+.active {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02); }
+  .active:hover a {
+    background-color: #f9ab00;
+    color: #000; }
+  .active a {
+    background-color: #f9ab00;
+    border-radius: 0;
+    color: #000;
+    font-weight: 700; }
 
 .l-about {
   vertical-align: top;
