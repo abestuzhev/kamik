@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,600,700&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -85,7 +87,7 @@
         </div><!--END l-adunit-->
 
         <div class="top-slider"></div><!--END top-slider-->
-        <div class="l-services">
+          <div class="l-services">
             <div class="c-service">
               <!-- START c-service_item -->
               <div class="c-service_item">
@@ -118,11 +120,12 @@
               </div>
               <!-- END c-service_item -->
             </div>
-        </div><!--END services-->
-
+          </div><!--END services-->
+        </div> <!--END l-layout-->
 
 
         <div class="l-equipment">
+          <div class="l-layout">
           <ul class="c-menu c-menu--equipment">
             <li class="c-menu_item filter" data-filter=".category-1"><a href="#" class="c-menu_link">Нейтральное</a></li>
             <li class="c-menu_item filter" data-filter=".category-2"><a href="#" class="c-menu_link">Холодильное</a></li>
@@ -211,14 +214,44 @@
               <!-- END c-card-equipment -->
             </div>
           </div>
+          </div> <!--END l-layout-->
         </div><!--END l-filter-equipment-->
 
+        <!--START deals-slider-->
+        <div class="deals">
+          <div class="l-layout">
+
+            <div id="tabs-container c-tabs" >
+              <ul class="tabs-menu">
+                  <li class="current"><a href="#tab-1">Tab 1</a></li>
+                  <li><a href="#tab-2">Tab 2</a></li>
+                  <li><a href="#tab-3">Tab 3</a></li>
+              </ul>
+              <div class="tab">
+                  <div id="tab-1" class="tab-content">
+                    <div class="deals_slider">
+                      <div class="c-card-deals"></div>
+                      <div class="c-card-deals"></div>
+                      <div class="c-card-deals"></div>
+                      <div class="c-card-deals"></div>
+                      <div class="c-card-deals"></div>
+                    </div>
+                  </div>
+                  <div id="tab-2" class="tab-content">
+
+                  </div>
+                  <div id="tab-3" class="tab-content">
+                      <p>Duis egestas fermentum ipsum et commodo. Proin bibendum consectetur elit, hendrerit porta mi dictum eu. Vestibulum adipiscing euismod laoreet. Vivamus lobortis tortor a odio consectetur pulvinar. Proin blandit ornare eros dictum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet, ante aliquet molestie laoreet, lectus odio fringilla purus, id porttitor erat velit vitae mi. Nullam posuere nunc ut justo sollicitudin interdum. Donec suscipit eros nec leo condimentum fermentum. Nunc quis libero massa. Integer tempus laoreet lectus id interdum. Integer facilisis egestas dui at convallis. Praesent elementum nisl et erat iaculis a blandit ligula mollis. Vestibulum vitae risus dui, nec sagittis arcu. Nullam tortor enim, placerat quis eleifend in, viverra ac lacus. Ut aliquam sapien ut metus hendrerit auctor dapibus justo porta. </p>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--END deals-slider-->
 
 
-        <div class="equipment-slider"></div><!--END equipment-slider-->
-
-
-
+      <div class="l-layout">
         <div class="l-about">
           <div class="about">
             <h1 class="c-h1_title">о компании: <br> Камик - GROUP</h1>
@@ -234,6 +267,7 @@
             </div>
           </div>
         </div>
+
 
         <div class="l-partners">
           <div class="partners">
@@ -436,6 +470,7 @@
     </div> <!-- END footer -->
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/main.js"></script>
   </body>

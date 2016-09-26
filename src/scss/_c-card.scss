@@ -81,3 +81,18 @@
     }
   }
 }
+////
+////
+////
+//c-card-deals
+.c-card-deals {
+  display: inline-block;
+  width: 265px;
+  height: 451px;
+  background-color: #e2cbcb;
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
