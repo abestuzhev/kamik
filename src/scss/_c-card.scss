@@ -5,6 +5,7 @@
   border: 2px solid #EBEBEB;
   padding: 10px;
   padding-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
 
 
@@ -89,10 +90,54 @@
   display: inline-block;
   width: 265px;
   height: 451px;
-  background-color: #e2cbcb;
+  background-color: #fff;
   margin-right: 29px;
+  padding: 14px 17px 17px 20px;
+  position: relative;
+  overflow: visible;
 
   &:last-child {
     margin-right: 0;
   }
+
+  &_img {
+    padding-top: 10px;
+    height: 140px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    img {
+      display: inline-block;
+    }
+  }//_img
+
+  &_title {
+    padding: 10px 0 15px;
+    border-top: 1px solid #6c8795;
+    border-bottom: 1px solid #6c8795;
+
+  }//_title
+
+  &_point-deals {
+    position: absolute;
+    z-index: 999;
+    left: 18px;
+    top: -14px;
+    width: 28px;
+    height: 28px;
+    background: url($img-dir + 'point-deals.png') 0 0 no-repeat;
+  }//_point-deals
+
+  &_point-bottom {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+    background: url($img-dir + 'c-card-deals_point-bottom.png') 0 0 no-repeat;
+  }//_point-bottom
+
 }

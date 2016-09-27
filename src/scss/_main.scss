@@ -80,6 +80,14 @@
   background: url($img-dir + 'deals-bg.jpg') 0 0 no-repeat;
   background-size: cover;
   margin-bottom: 30px;
+
+  &_slider {
+    padding-top: 14px;
+  }
+}
+//slick style
+.slick-list {
+  padding-top: 14px;
 }
 .c-tabs {
   text-align: center;
