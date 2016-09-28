@@ -152,6 +152,17 @@
 
     &-old {
       display: inline-block;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 46%;
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+      }
 
       span {
         font-size: 12px;
