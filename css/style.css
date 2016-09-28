@@ -486,6 +486,8 @@ input {
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase; }
+    .c-service_title--small {
+      font-size: 20px; }
 
 .c-link-more {
   color: #202020;
@@ -547,8 +549,81 @@ input {
     background-image: url("../img/time24x24.png");
     background-position: 7px 8px; }
 
+.cd-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s 0s, visibility 0s .3s; }
+  .cd-top_text {
+    display: inline-block;
+    text-align: left;
+    color: #1F1F1F;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 41px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 19px; }
+    .cd-top_text::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 23px;
+      height: 28px;
+      background: url("../img/up.png") 0 0 no-repeat; }
+  .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    transition: opacity .3s 0s, visibility 0s 0s; }
+  .cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1; }
+  .cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5; }
+  .no-touch .cd-top:hover {
+    background-color: white;
+    opacity: 1; }
+
+.kamik-title {
+  text-align: center;
+  color: #232323;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+  margin-top: 30px; }
+
+.c-breadcrumbs {
+  display: inline-block;
+  margin-top: 7px; }
+  .c-breadcrumbs a {
+    color: #000;
+    font-family: "Exo 2";
+    font-size: 12px;
+    font-weight: 300; }
+  .c-breadcrumbs_divider {
+    margin: 0 2px; }
+
+.l-button {
+  float: right; }
+  .l-button .c-button {
+    margin-right: 16px; }
+    .l-button .c-button:last-child {
+      margin-right: 0; }
+
 .l-ad-unit {
-  padding-top: 15px;
   padding-bottom: 20px; }
 
 .ad-unit_title {
@@ -659,8 +734,7 @@ input {
   height: 675px;
   padding: 30px 0;
   background: url("../img/deals-bg.jpg") 0 0 no-repeat;
-  background-size: cover;
-  margin-bottom: 30px; }
+  background-size: cover; }
   .deals_link-all {
     position: absolute;
     bottom: 0;
@@ -746,7 +820,8 @@ input {
   display: inline-block;
   width: 49%;
   padding-right: 30px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-top: 30px; }
 
 .about {
   margin-bottom: 30px; }
@@ -759,7 +834,8 @@ input {
   margin-bottom: 50px; }
 
 .partners {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .discount::after {
   content: '';
@@ -839,6 +915,9 @@ input {
     width: 100%;
     display: block; }
 
+.p-services {
+  margin-bottom: 10px; }
+
 .header {
   padding-top: 10px; }
   .header_title {
@@ -891,7 +970,8 @@ input {
   padding-top: 10px; }
 
 .l-header-nav {
-  background-color: #7e96a2; }
+  background-color: #7e96a2;
+  margin-bottom: 15px; }
 
 .header-nav {
   text-align: justify;
