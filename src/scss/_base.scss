@@ -74,6 +74,7 @@ img, video {
 .l-layout {
   @extend %outline;
   max-width: 970px;
+  padding-bottom: 1px;
   margin: 0 auto;
   position: relative;
 }

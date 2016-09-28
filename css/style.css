@@ -43,7 +43,7 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-.c-menu_link:hover, .c-menu_link--icon:hover:after, .c-link-more:hover, .active, .header-nav_item:hover, .footer-column_link:hover {
+.c-menu_link:hover, .c-menu_link--icon:hover:after, .c-link-more:hover, .active, .current, .current .tabs-menu_link, .header-nav_item:hover, .footer-column_link:hover {
   transition: all .2s ease-out; }
 
 .l-layout {
@@ -51,6 +51,7 @@ img, video {
 
 .l-layout {
   max-width: 970px;
+  padding-bottom: 1px;
   margin: 0 auto;
   position: relative; }
 
@@ -148,10 +149,12 @@ input {
   width: 265px;
   height: 451px;
   background-color: #fff;
-  margin-right: 29px;
+  margin-right: 28px;
   padding: 14px 17px 17px 20px;
   position: relative;
-  overflow: visible; }
+  text-align: center;
+  overflow: visible;
+  box-shadow: -10px -10px #ededed; }
   .c-card-deals:last-child {
     margin-right: 0; }
   .c-card-deals_img {
@@ -164,9 +167,48 @@ input {
     .c-card-deals_img img {
       display: inline-block; }
   .c-card-deals_title {
+    text-align: center;
     padding: 10px 0 15px;
     border-top: 1px solid #6c8795;
-    border-bottom: 1px solid #6c8795; }
+    border-bottom: 1px solid #6c8795;
+    color: #6C8795;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .c-card-deals_text {
+    text-align: left;
+    height: 45px;
+    overflow: hidden;
+    color: #575757;
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: 400;
+    margin-bottom: 25px; }
+  .c-card-deals_price {
+    margin-bottom: 25px;
+    text-align: justify; }
+    .c-card-deals_price::after {
+      content: '';
+      width: 100%;
+      display: inline-block; }
+    .c-card-deals_price span {
+      color: #575757;
+      font-family: "Fira Sans";
+      font-weight: 300; }
+    .c-card-deals_price-old {
+      display: inline-block; }
+      .c-card-deals_price-old span {
+        font-size: 12px; }
+    .c-card-deals_price-new {
+      display: inline-block;
+      color: #EF5532;
+      font-family: "Exo 2";
+      font-size: 24px;
+      font-weight: 400; }
+      .c-card-deals_price-new span {
+        font-size: 14px; }
   .c-card-deals_point-deals {
     position: absolute;
     z-index: 999;
@@ -557,43 +599,74 @@ input {
   background: url("../img/deals-bg.jpg") 0 0 no-repeat;
   background-size: cover;
   margin-bottom: 30px; }
+  .deals_link-all {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    color: #FFF;
+    font-family: "Exo 2";
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase; }
   .deals_slider {
     padding-top: 14px; }
 
 .slick-list {
+  padding-left: 10px;
   padding-top: 14px; }
 
+.slick-dots {
+  bottom: -65px; }
+
 .c-tabs {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 60px; }
 
 .tabs-menu {
-  display: inline-block;
-  margin-bottom: 40px; }
+  text-align: justify;
+  margin-bottom: 26px; }
+  .tabs-menu::after {
+    content: '';
+    width: 100%;
+    display: inline-block; }
 
-.tabs-menu li {
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #ccc;
-  border-top: 1px solid #d4d4d1;
-  border-right: 1px solid #d4d4d1;
-  border-left: 1px solid #d4d4d1; }
-
-.tabs-menu li.current {
+.tabs-menu_line {
+  vertical-align: baseline;
   position: relative;
-  background-color: #fff;
+  top: -7px;
+  width: 5%;
+  display: inline-block;
   border-bottom: 1px solid #fff;
-  z-index: 5; }
+  height: 1px; }
+  .tabs-menu_line--big {
+    width: 13%; }
 
-.tabs-menu li a {
-  padding: 10px;
+.tabs-menu_item {
+  display: inline-block;
+  border: 1px solid #FFF;
+  border-radius: 50px; }
+
+.current {
+  border: none; }
+
+.tabs-menu_link {
+  display: block;
+  border-radius: 50px;
+  padding: 8px 26px;
   text-transform: uppercase;
-  color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 19px;
+  font-weight: 300; }
 
-.tabs-menu .current a {
-  color: #2e7da3; }
+.current .tabs-menu_link {
+  font-family: 'Exo 2 Condensed', sans-serif;
+  background-color: #F6AE00;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.27);
+  box-shadow: inset 4.5px 7.8px 27px rgba(255, 240, 0, 0.69), 0 0 0 6px rgba(0, 0, 0, 0.07), inset 0 0 27px rgba(252, 95, 0, 0.93); }
 
 .tab {
   display: block;

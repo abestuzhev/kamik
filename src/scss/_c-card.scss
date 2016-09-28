@@ -91,10 +91,12 @@
   width: 265px;
   height: 451px;
   background-color: #fff;
-  margin-right: 29px;
+  margin-right: 28px;
   padding: 14px 17px 17px 20px;
   position: relative;
+  text-align: center;
   overflow: visible;
+  box-shadow: -10px -10px #ededed;
 
   &:last-child {
     margin-right: 0;
@@ -114,11 +116,60 @@
   }//_img
 
   &_title {
+    text-align: center;
     padding: 10px 0 15px;
     border-top: 1px solid #6c8795;
     border-bottom: 1px solid #6c8795;
-
+    color: #6C8795;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }//_title
+
+  &_text {
+    text-align: left;
+    height: 45px;
+    overflow: hidden;
+    color: #575757;
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }//_text
+
+  &_price {
+    margin-bottom: 25px;
+    text-align: justify;
+    @include full-width;
+
+    span {
+      color: #575757;
+      font-family: "Fira Sans";
+      font-weight: 300;
+    }
+
+    &-old {
+      display: inline-block;
+
+      span {
+        font-size: 12px;
+      }
+    }//-old
+
+    &-new {
+      display: inline-block;
+      color: #EF5532;
+      font-family: "Exo 2";
+      font-size: 24px;
+      font-weight: 400;
+
+      span {
+        font-size: 14px;
+      }
+    }//-new
+  }//_price
 
   &_point-deals {
     position: absolute;
