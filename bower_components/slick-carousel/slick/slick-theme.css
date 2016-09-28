@@ -153,13 +153,16 @@
     line-height: 0;
 
     display: block;
+    position: relative;
 
     width: 9px;
     height: 9px;
+    border-radius: 9px;
     padding: 5px;
     border: 1px solid #FFF;
 
     cursor: pointer;
+    opacity: .9;
 
     color: transparent;
     /*border: 0;*/
@@ -175,31 +178,25 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
+    /*transform: scale(1.1);*/
 }
-/*.slick-dots li button:before
+.slick-dots li button:before
 {
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-
+  content: '';
+}
+.slick-dots li.slick-active button
+{
+    background-color: #fff;
+}
+.slick-dots li.slick-active button::before
+{
     position: absolute;
-    top: 0;
-    left: 0;
-
+    top: 50%;
+    left: 50%;
     width: 20px;
     height: 20px;
-
-    content: '•';
-    text-align: center;
-
-    opacity: .25;
-    color: black;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}*/
-.slick-dots li.slick-active button:before
-{
-    opacity: .75;
-    color: black;
+    margin-left: -11px;
+    margin-top: -11px;
+    border: 1px solid #fff;
+    border-radius: 20px;
 }
