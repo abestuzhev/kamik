@@ -69,11 +69,16 @@
       p {
         font-size: 17px;
         font-weight: 300;
+        color: #fff;
       }
     }//_number
 
     &_text {
       margin-bottom: 20px;
+
+      p {
+        color: #fff;
+      }
     }//_text
 
     &_social {
@@ -97,6 +102,7 @@
 
     p {
       margin-bottom: 3px;
+      color: #fff;
     }
   }//_copyright
 }

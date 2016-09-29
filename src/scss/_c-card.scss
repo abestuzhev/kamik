@@ -203,3 +203,54 @@
   }//_point-bottom
 
 }
+
+
+///
+.c-card-subcategory {
+  width: 180px;
+  height: 210px;
+  background-color: #FFF;
+  border: 2px solid #EBEBEB;
+  padding: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  position: relative;
+
+
+  &_img {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 15px;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+  }//_img
+
+  &_title {
+    text-align: left;
+    color: #000;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    a {
+      color: #000;
+    }
+  }//_title
+}
+
+//count-goods
+.count-goods {
+  font-size: 14px;
+}

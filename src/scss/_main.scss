@@ -181,6 +181,7 @@
 .tabs-menu {
   // height: 30px;
   // display: inline-block;
+  white-space: nowrap;
   text-align: justify;
   @include full-width;
   margin-bottom: 26px;
@@ -197,6 +198,10 @@
 
   &--big {
     width: 13%;
+  }
+
+  &--one-tabs {
+    width: 29%;
   }
 }
 
@@ -394,5 +399,74 @@
 .p-services {
   margin-bottom: 10px;
 }
+//////////
+///////////
+/////////////
+//services
 
-.l-button
+
+.p-equipment {
+  margin-bottom: 10px;
+
+  .equipment_item {
+    margin-bottom: 20px;
+  }//_item
+}
+//////////
+///////////
+/////////////
+//services
+
+.p-category {
+  @include clear;
+}
+
+.l-filter {
+  float: left;
+  margin-right: 20px;
+  @include clear;
+}
+
+.filter {
+  width: 180px;
+  padding: 20px 15px;
+  padding-bottom: 5px;
+  background-color: #f2f2f2;
+
+  &_title {
+    color: #242424;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }//_title
+
+  &_list {
+    margin-left: 10px;
+  }//_list
+
+  &_item {
+    margin-bottom: 10px;
+  }//_item
+
+  &_link {
+    color: #4F4F4F;
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover {
+      color: #f9ab00;
+      @extend %transition;
+    }
+  }//_link
+}
+
+.l-output {
+  margin-left: 200px;
+}
+
+.l-category {
+  @include clear;
+}

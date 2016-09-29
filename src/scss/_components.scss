@@ -8,6 +8,35 @@
   text-transform: uppercase;
   margin-bottom: 15px;
 }
+.c-h2_title {
+  text-align: left;
+  color: #232323;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 20px;
+
+  &--center {
+    text-align: center;
+  }
+}
+.c-h3_title {
+  text-align: left;
+  color: #7E96A2;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  a {
+    color: #7E96A2;
+  }
+}
 
 .l-list {
   text-align: justify;
@@ -429,16 +458,16 @@
 
 //kamik title
 
-.kamik-title {
-  text-align: center;
-  color: #232323;
-  font-family: 'Exo 2 Condensed', sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 11px;
-  margin-top: 30px;
-}
+// .kamik-title {
+//   text-align: center;
+//   color: #232323;
+//   font-family: 'Exo 2 Condensed', sans-serif;
+//   font-size: 36px;
+//   font-weight: 400;
+//   text-transform: uppercase;
+//   margin-bottom: 11px;
+//   margin-top: 30px;
+// }
 
 //c-breadcrumbs
 .c-breadcrumbs {
@@ -469,3 +498,63 @@
     }
   }
 }//l-button
+
+
+//c-show-all
+.c-show-all {
+  display: block;
+  text-align: center;
+  color: #3F3F3F;
+  font-family: "Exo 2";
+  font-size: 12px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+
+  &:hover::after {
+    transform: translate(-50%, 2px);
+    @extend %transition;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: url($img-dir + 'down-icon.png') 0 0 no-repeat;
+    @extend %transition;
+  }
+
+  &--up {
+    padding-top: 15px;
+    margin-top: 20px;
+    padding-bottom: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 6px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: url($img-dir + 'down-icon--up.png') 0 0 no-repeat;
+      @extend %transition;
+    }
+  }
+
+  &--left {
+    text-align: left;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      background: url($img-dir + 'down-icon.png') 0 0 no-repeat;
+      @extend %transition;
+    }
+  }
+}//c-show-all
