@@ -47,7 +47,7 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-.c-menu_link:hover, .c-menu_link--icon:hover:after, .c-link-more:hover, .c-show-all:hover::after, .c-show-all::after, .c-show-all--up::after, .c-show-all--left::after, .active, .current, .current .tabs-menu_link, .filter_link:hover, .header-nav_item:hover, .footer-column_link:hover {
+.c-menu_link:hover, .c-menu_link--icon:hover:after, .c-link-more:hover, .c-show-all:hover::after, .c-show-all::after, .c-show-all--up::after, .c-show-all--left::after, .active, .current, .current .tabs-menu_link, .filter-goods_link:hover, .header-nav_item:hover, .footer-column_link:hover {
   transition: all .2s ease-out; }
 
 .l-layout {
@@ -779,7 +779,7 @@ input {
         position: absolute;
         top: 0;
         right: -55px;
-        width: 900%;
+        width: 10000px;
         height: 56px;
         background-color: #fff;
         opacity: .8;
@@ -796,7 +796,7 @@ input {
       position: absolute;
       top: -9px;
       right: -7px;
-      width: 1900%;
+      width: 10000px;
       height: 31px;
       background-color: #fff;
       opacity: .8;
@@ -1044,28 +1044,28 @@ input {
     display: block;
     clear: both; }
 
-.filter {
+.filter-goods {
   width: 180px;
   padding: 20px 15px;
   padding-bottom: 5px;
   background-color: #f2f2f2; }
-  .filter_title {
+  .filter-goods_title {
     color: #242424;
     font-family: 'Exo 2 Condensed', sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 15px; }
-  .filter_list {
+  .filter-goods_list {
     margin-left: 10px; }
-  .filter_item {
+  .filter-goods_item {
     margin-bottom: 10px; }
-  .filter_link {
+  .filter-goods_link {
     color: #4F4F4F;
     font-family: "Exo 2";
     font-size: 14px;
     font-weight: 500; }
-    .filter_link:hover {
+    .filter-goods_link:hover {
       color: #f9ab00; }
 
 .l-output {

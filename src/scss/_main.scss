@@ -62,7 +62,7 @@
         position: absolute;
         top: 0;
         right: -55px;
-        width: 900%;
+        width: 10000px;
         height: 56px;
         background-color: #fff;
         opacity: .8;
@@ -84,7 +84,7 @@
       position: absolute;
       top: -9px;
       right: -7px;
-      width: 1900%;
+      width: 10000px;
       height: 31px;
       background-color: #fff;
       opacity: .8;
@@ -427,7 +427,7 @@
   @include clear;
 }
 
-.filter {
+.filter-goods {
   width: 180px;
   padding: 20px 15px;
   padding-bottom: 5px;
