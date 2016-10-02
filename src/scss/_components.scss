@@ -766,6 +766,25 @@
 
 //price-drop
 .price-drop {
+  display: block;
   margin-top: 20px;
   margin-bottom: 60px;
+  color: #7E96A2;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  padding-left: 18px;
+  position: relative;
+
+  &::before {
+    content: '@';
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #6D8399;
+
+  }
 }

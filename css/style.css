@@ -344,20 +344,41 @@ input {
   .c-card-goods:last-child {
     margin-bottom: 30px; }
 
+.c-card_btn-click {
+  cursor: pointer;
+  position: relative;
+  left: -8px;
+  vertical-align: top;
+  color: #8F9699;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  height: 35px;
+  line-height: 20px;
+  padding: 8px 18px;
+  padding-left: 26px;
+  text-transform: uppercase;
+  background-color: #F2F2F2; }
+
 .c-card-product {
   border: 1px solid #D5D5D5;
   margin-bottom: 15px;
-  height: 225px; }
+  height: 260px; }
   .c-card-product::after {
     content: '';
     display: block;
     clear: both; }
+  .c-card-product_price {
+    margin-bottom: 15px;
+    font-family: 'Exo 2 Condensed', sans-serif; }
   .c-card-product_img {
     float: left;
     text-align: center;
     overflow: hidden;
     width: 300px;
-    height: 225px;
+    height: 260px;
     margin-right: 10px;
     position: relative; }
     .c-card-product_img img {
@@ -379,6 +400,31 @@ input {
     border-left: 1px solid #d5d5d5;
     padding: 18px 14px;
     float: right; }
+  .c-card-product_phone-place {
+    position: relative;
+    z-index: 10;
+    width: 175px; }
+  .c-card-product_advantages {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px; }
+    .c-card-product_advantages_title {
+      color: #151515;
+      font-family: "Exo 2";
+      font-size: 12px;
+      font-weight: 400; }
+    .c-card-product_advantages::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 16px;
+      height: 21px;
+      background-color: #000; }
+
+.icon-availability::before {
+  content: '';
+  background: url("../img/icon-availability.png") 0 0 no-repeat; }
 
 @font-face {
   font-family: 'Exo 2 Condensed';
@@ -960,8 +1006,24 @@ input {
       background-position: -8px 50%; }
 
 .price-drop {
+  display: block;
   margin-top: 20px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  color: #7E96A2;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  padding-left: 18px;
+  position: relative; }
+  .price-drop::before {
+    content: '@';
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #6D8399; }
 
 .l-ad-unit {
   padding-bottom: 20px; }
