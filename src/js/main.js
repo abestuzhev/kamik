@@ -1,10 +1,16 @@
 $(function(){
 
-	$('#Container').mixItUp({
+    $('#Container').mixItUp({
     load: {
-  		filter: '.category-1'
-  	}
-  });
+        filter: '.category-1'
+    }
+    });
+
+    $('#Container-portfolio').mixItUp({
+    load: {
+        filter: 'all'
+    }
+    });
 
   $('.c-menu_link').on('click', function(e){
     e.preventDefault();
@@ -70,7 +76,7 @@ $(function(){
 		 	}, scroll_top_duration
 		);
 	});
-    
+
 	///spiner
     $("#spinner").spinner();
 

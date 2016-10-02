@@ -14,7 +14,8 @@
     margin-left: 10px;
 
     span {
-      // margin-left: 10px;
+      font-size: 12px;
+      font-weight: 300;
     }
   }//text
 }
@@ -99,4 +100,52 @@
     }
 
   }//_link
+}
+
+
+////header-basket
+.header-basket {
+  border-bottom: 1px solid #D9D9D9;
+  padding-top: 10px;
+
+  &_title {
+    color: #1D1D1D;
+    font-family: "Exo 2";
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }//_title
+
+  &-contact {
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 5px;
+      left: 0;
+      background: url($img-dir + 'contact-icon.png') 1px 0 no-repeat;
+    }
+
+    p {
+      color: #000;
+      font-family: "Exo 2";
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+
+    &_title {
+      margin-bottom: 12px;
+      color: #000;
+      font-family: "Exo 2";
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
 }

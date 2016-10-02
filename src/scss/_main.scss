@@ -117,7 +117,12 @@
   padding: 20px 0px;
   background-color: #f2f2f2;
 }
+
 #Container .mix {
+	display: none;
+}
+
+#Container-portfolio .mix {
 	display: none;
 }
 
@@ -484,3 +489,46 @@
     margin-right: 16px;
   }//_title
 }//sort
+
+
+//basket
+.p-basket {
+  padding: 20px 0 35px;
+}
+.basket-step_text {
+  text-align: center;
+  color: #4D4D4D;
+  font-family: "Exo 2 Thin";
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.basket-step {
+  width: 235px;
+  height: 67px;
+  margin-bottom: 30px;
+
+  &--personal {
+    background: url($img-dir + 'basket-step--personal.png') 0 0 no-repeat;
+  }
+  &--delivery {
+    background: url($img-dir + 'basket-step--delivery.png') 0 0 no-repeat;
+  }
+  &--payment {
+    background: url($img-dir + 'basket-step--payment.png') 0 0 no-repeat;
+  }
+  &--processed {
+    background: url($img-dir + 'basket-step--processed.png') 0 0 no-repeat;
+  }
+
+  &_title {
+    line-height: 67px;
+    margin-left: 70px;
+    color: #FFF;
+    font-family: "Exo 2 Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

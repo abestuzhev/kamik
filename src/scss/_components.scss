@@ -1,3 +1,5 @@
+
+
 .c-h1_title {
   text-align: left;
   color: #6C8795;
@@ -42,6 +44,7 @@
 .l-list {
   text-align: justify;
   @include full-width;
+  margin-bottom: -10px;
 
   &_item {
     vertical-align: top;
@@ -101,11 +104,15 @@
 .c-menu {
   text-align: justify;
   @include full-width;
+  //margin-bottom: -10px;
 
   &--inline {
     vertical-align: middle;
     text-align: left;
     display: inline-block;
+    li {
+      margin: 0 5px;
+    }
   }
 
   &_item {
@@ -786,5 +793,76 @@
     left: 0;
     color: #6D8399;
 
+  }
+}
+
+//c-basket-form
+.c-basket-form {
+  width: 570px;
+  padding-left: 25px;
+  margin-bottom: 35px;
+
+  &_selection {
+    padding: 10px 0;
+    border-top: 1px solid #b8c8d0;
+    border-bottom: 1px solid #b8c8d0;
+    margin-bottom: 15px;
+  }//selection
+
+  &_line {
+    margin-bottom: 10px;
+
+    input {
+      width: 66%;
+    }
+  }
+
+  &_button {
+    text-align: right;
+  }
+
+  &_label {
+    display: inline-block;
+    width: 180px;
+  }
+}
+
+.c-basket-information {
+  width: 380px;
+  padding-left: 20px;
+
+  &_title {
+    color: #DAD9D9;
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-left: 45px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      background: url($img-dir + 'c-basket-information_title.png') 0 0 no-repeat;
+    }
+  }
+
+  p {
+    color: #C3C3C3;
+    font-family: "Exo 2";
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  &_expression {
+    font-size: 12px;
+    color: #9A9A9A;
+    font-weight: 500;
   }
 }

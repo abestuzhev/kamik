@@ -1,3 +1,12 @@
+.green {
+  color: #16a22c; }
+
+.red {
+  color: #b01515; }
+
+.blue {
+  color: #7e96a2; }
+
 body {
   font-size: 12px;
   font-family: "Exo 2", sans-serif;
@@ -47,7 +56,7 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-.c-menu_link:hover, .c-menu_link--icon-all:hover::after, .c-menu_link--icon-popular:hover::after, .c-menu_link--icon-down:hover::after, .c-menu_link--icon-up:hover::after, .c-link-more:hover, .c-show-all:hover::after, .c-show-all::after, .c-show-all--up::after, .c-show-all--left::after, .active, .current, .current .tabs-menu_link, .filter-goods_link:hover, .header-nav_item:hover, .footer-column_link:hover {
+.c-card_see-all, .c-card_see-all:hover, .c-card-category_link, .c-card-category_link:hover, .c-menu_link:hover, .c-menu_link--icon-all:hover::after, .c-menu_link--icon-popular:hover::after, .c-menu_link--icon-down:hover::after, .c-menu_link--icon-up:hover::after, .c-link-more:hover, .c-show-all:hover::after, .c-show-all::after, .c-show-all--up::after, .c-show-all--left::after, .active, .current, .current .tabs-menu_link, .filter-goods_link:hover, .header-nav_item:hover, .footer-column_link:hover {
   transition: all .2s ease-out; }
 
 .l-layout {
@@ -56,13 +65,25 @@ img, video {
   margin: 0 auto;
   position: relative; }
 
-input {
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="number"] {
   bottom: 0;
   outline: 0;
   border: 1px solid #CCC;
   border-radius: 4px;
   padding: 10px 15px;
   width: 100%; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  bottom: 0;
+  outline: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: auto; }
 
 .vk svg:hover #vk {
   fill: #4d76a1; }
@@ -393,6 +414,10 @@ input {
     width: 370px;
     padding: 12px 0;
     float: left; }
+  .c-card-product_sum {
+    color: #BABABA; }
+  .c-card-product_price span {
+    color: #575757; }
   .c-card-product_section {
     height: 100%;
     width: 275px;
@@ -407,7 +432,7 @@ input {
   .c-card-product_advantages {
     position: relative;
     padding-left: 25px;
-    margin-bottom: 10px; }
+    margin-bottom: 7px; }
     .c-card-product_advantages_title {
       color: #151515;
       font-family: "Exo 2";
@@ -418,13 +443,181 @@ input {
       position: absolute;
       top: 3px;
       left: 0;
-      width: 16px;
-      height: 21px;
+      width: 20px;
+      height: 22px;
       background-color: #000; }
+
+.product-description {
+  width: 470px;
+  border-right: 1px solid #ececec;
+  padding-right: 40px;
+  margin-bottom: 35px; }
+  .product-description_title {
+    margin-bottom: 15px;
+    color: #7E96A2;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .product-description_text p {
+    color: #191919;
+    font-family: "Exo 2";
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 400; }
+
+.product-characteristics {
+  padding-left: 10px;
+  margin-bottom: 35px; }
 
 .icon-availability::before {
   content: '';
   background: url("../img/icon-availability.png") 0 0 no-repeat; }
+
+.icon-delivery,
+.icon-certificate,
+.icon-guarantee,
+.icon-service,
+.icon-payment {
+  text-decoration: underline;
+  line-height: 27px; }
+
+.icon-terms::before {
+  content: '';
+  background: url("../img/terms.png") 0 0 no-repeat; }
+
+.icon-delivery::before {
+  content: '';
+  top: 5px;
+  background: url("../img/delivery-icon.png") 0 0 no-repeat; }
+
+.icon-certificate::before {
+  content: '';
+  left: 2px;
+  background: url("../img/certificate-icon.png") 0 0 no-repeat; }
+
+.icon-guarantee::before {
+  content: '';
+  left: 3px;
+  width: 22px;
+  background: url("../img/guarantee-icon.png") 0 0 no-repeat; }
+
+.icon-service::before {
+  content: '';
+  height: 24px;
+  top: 0;
+  background: url("../img/service-icon.png") 0 0 no-repeat; }
+
+.icon-payment::before {
+  top: 5px;
+  content: '';
+  background: url("../img/payment-icon.png") 0 0 no-repeat; }
+
+.c-card-portfolio {
+  width: 310px;
+  background-color: #FFF;
+  border: 2px solid #EBEBEB;
+  padding-bottom: 25px;
+  position: relative;
+  margin-bottom: 10px; }
+  .c-card-portfolio_img {
+    height: 127px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px; }
+    .c-card-portfolio_img img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: auto; }
+  .c-card-portfolio_date {
+    margin-bottom: 5px;
+    color: #898989;
+    font-family: "Exo 2";
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0px 10px; }
+  .c-card-portfolio_title {
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: "Exo 2 Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase; }
+
+.c-card_see-all {
+  color: #000;
+  font-family: "Exo 2";
+  font-size: 12px;
+  font-weight: 700;
+  padding-right: 12px;
+  position: relative; }
+  .c-card_see-all::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 5px;
+    height: 6px;
+    background: url("../img/see-all-icon.png") 0 0 no-repeat; }
+  .c-card_see-all:hover {
+    text-decoration: underline;
+    color: #7E96A2; }
+
+.c-card-category {
+  padding: 13px 17px;
+  width: 317px;
+  background-color: #FFF;
+  border: 2px solid #D7D7D7;
+  margin-bottom: 10px; }
+  .c-card-category_top {
+    display: table;
+    vertical-align: middle;
+    margin-bottom: 20px; }
+    .c-card-category_top::after {
+      content: '';
+      display: block;
+      clear: both; }
+  .c-card-category_img {
+    display: table-cell;
+    width: 43px;
+    height: 43px; }
+    .c-card-category_img img {
+      max-width: 100%;
+      height: auto; }
+  .c-card-category_title {
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: middle; }
+    .c-card-category_title a {
+      color: #000;
+      font-family: "Exo 2 Condensed", sans-serif;
+      font-size: 21px;
+      line-height: 20px;
+      font-weight: 400;
+      text-transform: uppercase; }
+      .c-card-category_title a:hover {
+        color: #7E96A2;
+        text-decoration: underline; }
+  .c-card-category_list {
+    margin-bottom: 20px; }
+  .c-card-category_item {
+    margin-bottom: 5px; }
+  .c-card-category_link {
+    font-family: "Exo 2";
+    font-size: 13px;
+    color: #898989;
+    font-weight: 300; }
+    .c-card-category_link:hover {
+      font-size: 13px;
+      color: #111;
+      font-weight: 500;
+      text-decoration: underline; }
 
 @font-face {
   font-family: 'Exo 2 Condensed';
@@ -517,7 +710,8 @@ input {
     color: #7E96A2; }
 
 .l-list {
-  text-align: justify; }
+  text-align: justify;
+  margin-bottom: -10px; }
   .l-list::after {
     content: '';
     width: 100%;
@@ -572,6 +766,8 @@ input {
     vertical-align: middle;
     text-align: left;
     display: inline-block; }
+    .c-menu--inline li {
+      margin: 0 5px; }
   .c-menu_item {
     display: inline-block;
     vertical-align: top; }
@@ -1025,6 +1221,56 @@ input {
     left: 0;
     color: #6D8399; }
 
+.c-basket-form {
+  width: 570px;
+  padding-left: 25px;
+  margin-bottom: 35px; }
+  .c-basket-form_selection {
+    padding: 10px 0;
+    border-top: 1px solid #b8c8d0;
+    border-bottom: 1px solid #b8c8d0;
+    margin-bottom: 15px; }
+  .c-basket-form_line {
+    margin-bottom: 10px; }
+    .c-basket-form_line input {
+      width: 66%; }
+  .c-basket-form_button {
+    text-align: right; }
+  .c-basket-form_label {
+    display: inline-block;
+    width: 180px; }
+
+.c-basket-information {
+  width: 380px;
+  padding-left: 20px; }
+  .c-basket-information_title {
+    color: #DAD9D9;
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-left: 45px;
+    position: relative; }
+    .c-basket-information_title::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      background: url("../img/c-basket-information_title.png") 0 0 no-repeat; }
+  .c-basket-information p {
+    color: #C3C3C3;
+    font-family: "Exo 2";
+    font-size: 12px;
+    font-weight: 300; }
+  .c-basket-information_expression {
+    font-size: 12px;
+    color: #9A9A9A;
+    font-weight: 500; }
+
 .l-ad-unit {
   padding-bottom: 20px; }
 
@@ -1117,6 +1363,9 @@ input {
   background-color: #f2f2f2; }
 
 #Container .mix {
+  display: none; }
+
+#Container-portfolio .mix {
   display: none; }
 
 .active {
@@ -1382,6 +1631,38 @@ input {
   text-transform: uppercase;
   margin-right: 16px; }
 
+.p-basket {
+  padding: 20px 0 35px; }
+
+.basket-step_text {
+  text-align: center;
+  color: #4D4D4D;
+  font-family: "Exo 2 Thin";
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 20px; }
+
+.basket-step {
+  width: 235px;
+  height: 67px;
+  margin-bottom: 30px; }
+  .basket-step--personal {
+    background: url("../img/basket-step--personal.png") 0 0 no-repeat; }
+  .basket-step--delivery {
+    background: url("../img/basket-step--delivery.png") 0 0 no-repeat; }
+  .basket-step--payment {
+    background: url("../img/basket-step--payment.png") 0 0 no-repeat; }
+  .basket-step--processed {
+    background: url("../img/basket-step--processed.png") 0 0 no-repeat; }
+  .basket-step_title {
+    line-height: 67px;
+    margin-left: 70px;
+    color: #FFF;
+    font-family: "Exo 2 Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase; }
+
 .header {
   padding-top: 10px; }
   .header_title {
@@ -1393,6 +1674,9 @@ input {
   .header_text {
     margin-bottom: 10px;
     margin-left: 10px; }
+    .header_text span {
+      font-size: 12px;
+      font-weight: 300; }
 
 .l-header_search {
   margin: 10px 0;
@@ -1465,6 +1749,41 @@ input {
       right: 10px;
       top: 12px;
       background: url("../img/nav-icon.png") left top no-repeat; }
+
+.header-basket {
+  border-bottom: 1px solid #D9D9D9;
+  padding-top: 10px; }
+  .header-basket_title {
+    color: #1D1D1D;
+    font-family: "Exo 2";
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .header-basket-contact {
+    padding-left: 20px;
+    position: relative; }
+    .header-basket-contact::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 5px;
+      left: 0;
+      background: url("../img/contact-icon.png") 1px 0 no-repeat; }
+    .header-basket-contact p {
+      color: #000;
+      font-family: "Exo 2";
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 5px; }
+    .header-basket-contact_title {
+      margin-bottom: 12px;
+      color: #000;
+      font-family: "Exo 2";
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase; }
 
 .footer {
   background: url("../img/footer-bg.jpg") left top no-repeat;

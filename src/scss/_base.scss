@@ -8,6 +8,10 @@ $default-font-size: 12px;
 $expresion-color: #44A397;
 $dark-color: #2a2531;
 
+.green {color: #16a22c;}
+.red {color: #b01515;}
+.blue {color: #7e96a2;}
+
 body {
   font-size: $default-font-size;
   font-family: "Exo 2", sans-serif;
@@ -82,13 +86,25 @@ img, video {
   position: relative;
 }
 
-input {
+input[type="text"],
+input[type="tel"],
+input[type="search"],
+input[type="number"] {
   bottom: 0;
   outline: 0;
   border: 1px solid #CCC;
   border-radius: 4px;
   padding: 10px 15px;
   width: 100%;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  bottom: 0;
+  outline: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: auto;
 }
 
 .vk svg:hover #vk {
