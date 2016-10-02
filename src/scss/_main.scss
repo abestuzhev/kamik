@@ -470,3 +470,17 @@
 .l-category {
   @include clear;
 }
+
+
+//sort
+.sort {
+  &_title {
+    display: inline-block;
+    font-family: 'Exo 2 Condensed', sans-serif;
+    color: #242424;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 16px;
+  }//_title
+}//sort

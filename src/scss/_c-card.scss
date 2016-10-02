@@ -23,7 +23,6 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-
     }
   }//_img
 
@@ -253,4 +252,146 @@
 //count-goods
 .count-goods {
   font-size: 14px;
+}
+
+
+///////
+///////
+.l-card_line {
+  &:last-child {
+    margin-top: 10px;
+  }
+}
+.c-card-goods {
+  border: 1px solid #D5D5D5;
+  @include clear;
+  height: 164px;
+  margin-bottom: 15px;
+
+
+  &_img {
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    width: 225px;
+    height: 160px;
+    margin-right: 10px;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }//img
+  }//_img
+
+
+  &_title {
+    color: #6C8795;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }//_title
+
+  &_body {
+    padding: 12px 0;
+    float: left;
+  }//_body
+
+  &_vendorcode {
+    color: #575757;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }//_vendorcode
+
+  &_section {
+    height: 100%;
+    width: 275px;
+    background-color: #f2f2f2;
+    border-left: 1px solid #d5d5d5;
+    padding: 18px 14px;
+    float: right;
+  }//_section
+
+  &_properties {
+    &-title {
+      color: #0A0A0A;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }//-title
+
+    &-list {
+      margin-left: 10px;
+    }//-list
+
+    &-item {
+      display: table;
+      font-size: 12px;
+      color: #575757;
+      margin-bottom: 5px;
+    }//-item
+
+    &-point {
+      display: table-cell;
+      font-weight: 700;
+    }
+    &-text {
+      margin-left: 5px;
+      color: #575757;
+      font-weight: 400;
+    }
+  }//_properties
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+//product card
+.c-card-product {
+  border: 1px solid #D5D5D5;
+  @include clear;
+  margin-bottom: 15px;
+  height: 225px;
+
+  &_img {
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    width: 300px;
+    height: 225px;
+    margin-right: 10px;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }//img
+
+  }//c-card-product_img
+
+  &_body {
+    width: 370px;
+    padding: 12px 0;
+    float: left;
+  }//_body
+
+  &_section {
+    height: 100%;
+    width: 275px;
+    background-color: #f2f2f2;
+    border-left: 1px solid #d5d5d5;
+    padding: 18px 14px;
+    float: right;
+  }//_section
+
+
 }

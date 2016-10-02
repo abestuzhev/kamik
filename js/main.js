@@ -70,5 +70,8 @@ $(function(){
 		 	}, scroll_top_duration
 		);
 	});
+    
+	///spiner
+    $("#spinner").spinner();
 
 });
