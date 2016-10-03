@@ -1,10 +1,5 @@
 $(function(){
-
-    //viewportchecker
-    $('.about-number').addClass('hidden').viewportChecker({
-        classToAdd: 'visible',
-        offset: 100
-    });
+	
 
     $('#Container').mixItUp({
     load: {
