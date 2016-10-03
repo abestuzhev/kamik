@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-</div><!-- l-layout -->
+  </div><!-- l-layout -->
 
 </div>
 <!-- END header-basket -->
@@ -49,99 +49,36 @@
       <div class="basket-step_text">Шаг 1: Введите контактные данные для связи с нами.</div>
       <div class="l-list">
         <div class="l-list_item">
-          <div class="basket-step basket-step--personal" style="background-image: url('img/basket-step--personal-active.png')">
-            <div class="basket-step_title">1. Личные данные</div>
+          <div class="basket-step basket-step--personal" style="background-image: url('img/basket-step--personal-disable.png')">
+            <div class="basket-step_title basket-step--disable">1. Личные данные</div>
           </div>
         </div>
         <div class="l-list_item">
-          <div class="basket-step basket-step--delivery">
-            <div class="basket-step_title">2. Доставка</div>
+          <div class="basket-step basket-step--delivery" style="background-image: url('img/basket-step--delivery-disable.png')">
+            <div class="basket-step_title basket-step--disable">2. Доставка</div>
           </div>
         </div>
         <div class="l-list_item">
-          <div class="basket-step basket-step--payment">
-            <div class="basket-step_title">3. Оплата</div>
+          <div class="basket-step basket-step--payment" style="background-image: url('img/basket-step--payment-disable.png')">
+            <div class="basket-step_title basket-step--disable">3. Оплата</div>
           </div>
         </div>
         <div class="l-list_item">
-          <div class="basket-step basket-step--processed">
+          <div class="basket-step basket-step--processed" style="background-image: url('img/basket-step--processet-active.png')">
             <div class="basket-step_title">4. Заказ оформлен</div>
           </div>
         </div>
       </div>
 
-      <div class="l-grid">
-        <div class="l-grid_item">
-          <!---->
-          <div class="c-basket-form">
-            <form action="#">
-              <div class="c-basket-form_selection">
-                <div class="c-basket-form_selection-item is-active">
-                  <input class="c-basket-form_radio" type="radio" id="form_face" name="basket-face" checked="checked">
-                  <label class="js-first_label" for="form_face">Физическое лицо</label>
-                </div>
-                <div class="c-basket-form_selection-item">
-                  <input class="c-basket-form_radio" type="radio" id="form_face-ur" name="basket-face">
-                  <label class="js-second_label" for="form_face-ur">Юридическое лицо</label>
-                </div>
-              </div>
+     <div class="basket-processed">
+       <div class="basket-processed_title">ВАШ ЗАКАЗ УСПЕШНО ОФОРМЛЕН!</div>
+       <div class="basket-processed_img"><img src="img/processed-icon.png" alt=""></div>
+       <div class="basket-processed_text">Наши менеджеры свяжутся с Вами в течении <span>20</span> минут
+         и согласуют заказ.</div>
+       <a href="#" class="c-button c-button--right">В каталог</a>
+       <a href="#" class="c-button c-button--right">На главную</a>
 
-              <div class="js-first_block is-visible">
-                <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="name">Ваше имя: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="text" id="name">
-                </div>
-                <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="email">E-mail: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="text" id="email">
-                </div>
-                <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="phone">Телефон: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="tel" id="phone">
-                </div>
-              </div>
-
-              <div class="js-second_block">
-                <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="name">Название организации: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="text" id="name">
-                </div>
-                <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="name">Контактное лицо: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="text" id="name">
-                </div>
-                <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="email">E-mail: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="text" id="email">
-                </div>
-                <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="phone">Телефон: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="tel" id="phone">
-                </div>
-              </div>
-
-              <div class="c-basket-form_button"><button class="c-button c-button--right">продолжить оформление</button></div>
-            </form>
-          </div>
-          <!---->
-        </div>
-        <div class="l-grid_item">
-          <div class="c-basket-information">
-            <div class="c-basket-information_title">Немного для справки:</div>
-            <p>Весь товар, поставляемый Торговым Домом «КАМИК»,
-              соответствует российским и мировым стандартам, имеет все
-              необходимые сертификаты качества.
-              Сервисная служба компании обеспечивает гарантийное и
-              послегарантийное обслуживание оборудования.</p>
-            <p>В случае возникновения вопросов вы можетесвязаться с нами
-              по телефону: <span class="c-basket-information_expression">+7 (499) 641-1111</span></p>
-            <p>
-            <p>Или вы можете <a class="c-basket-information_callback" href="#">ЗАКАЗАТЬ ЗВОНОК</a></p>
-            <p><span class="c-basket-form_star">*</span> Звездочкой отмечены поля,  обязательные для заполнения</p>
-            <p></p>
-          </div>
-        </div>
-      </div>
+     </div>
 
       <div class="basket-result">
         <span class="basket-result-quantity">Товаров в заказе: <span class="basket-result-quantity_number">11</span></span>
@@ -176,10 +113,11 @@
           </div>
         </div>
         <div class="c-card-goods_section c-card-basket_layout">
-          <a href="#" class="c-card-basket-action">
-            <div class="c-card-basket-action_img"><img src="img/c-basket-delete.png" alt=""></div>
-            <div class="c-card-basket-action_text">Удалить</div>
-          </a>
+          <div class="c-card-basket-action">
+            <div class="c-card-basket-action_img"><img src="img/processed.png" alt=""></div>
+            <div class="c-card-basket-action_quantity">1 <span>шт.</span></div>
+            <div class="c-card-basket-action_sum">12 500 <span>руб.</span></div>
+          </div>
         </div>
       </div><!--END c-card-goods-->
 
@@ -211,10 +149,11 @@
           </div>
         </div>
         <div class="c-card-goods_section c-card-basket_layout">
-          <a href="#" class="c-card-basket-action">
-            <div class="c-card-basket-action_img"><img src="img/c-basket-delete.png" alt=""></div>
-            <div class="c-card-basket-action_text">Удалить</div>
-          </a>
+          <div class="c-card-basket-action">
+            <div class="c-card-basket-action_img"><img src="img/processed.png" alt=""></div>
+            <div class="c-card-basket-action_quantity">1 <span>шт.</span></div>
+            <div class="c-card-basket-action_sum">12 500 <span>руб.</span></div>
+          </div>
         </div>
       </div><!--END c-card-goods-->
 

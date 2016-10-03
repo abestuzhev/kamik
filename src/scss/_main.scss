@@ -188,7 +188,6 @@
   // display: inline-block;
   white-space: nowrap;
   text-align: justify;
-  @include full-width;
   margin-bottom: 26px;
 }
 
@@ -303,6 +302,7 @@
     text-transform: uppercase;
     float: left;
     width: 105px;
+    line-height: 100px;
     margin-right: 10px;
   }//_img
 
@@ -493,7 +493,7 @@
 
 //basket
 .p-basket {
-  padding: 20px 0 35px;
+  padding: 20px 0 5px;
 }
 .basket-step_text {
   text-align: center;
@@ -508,6 +508,7 @@
   width: 235px;
   height: 67px;
   margin-bottom: 30px;
+  background-size: cover;
 
   &--personal {
     background: url($img-dir + 'basket-step--personal.png') 0 0 no-repeat;
@@ -531,4 +532,394 @@
     font-weight: 400;
     text-transform: uppercase;
   }
+
+  &--disable {
+    color: #C2C2C2;
+  }
 }
+
+
+//c-basket-form
+.c-basket-form {
+  width: 570px;
+  padding-left: 25px;
+  margin-bottom: 35px;
+
+  &_selection {
+    padding: 10px 0;
+    border-top: 1px solid #b8c8d0;
+    border-bottom: 1px solid #b8c8d0;
+    margin-bottom: 15px;
+
+    &-item {
+      display: inline-block;
+      margin-right: 30px;
+    }
+  }//selection
+
+  &_line {
+    margin-bottom: 10px;
+
+    .c-basket-form_input {
+      width: 66%;
+    }
+  }
+
+  &_button {
+    text-align: right;
+  }
+
+  &_label {
+    display: inline-block;
+    width: 180px;
+  }
+
+  &_physical {
+    display: block;
+  }
+
+  &_star {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ec7800;
+  }
+}
+
+.c-basket-form_radio {
+  display: none;
+}
+
+.c-basket-form_radio + label {
+  color: #1E1E1E;
+  font-family: "Exo 2";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c-basket-form_radio  label:first-child {
+  margin-right: 20px;
+}
+
+.c-basket-form_radio + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  border: 1px solid #959595;
+  background-color: #fff;
+}
+.c-basket-form_radio + label::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 20px;
+  background-color: #E0E0E0;
+}
+
+.c-basket-form_radio:checked + label::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 20px;
+  background-color: #f9ab00;
+  @extend %transition;
+}
+
+.c-basket-information {
+  width: 380px;
+  padding-left: 20px;
+
+  &_title {
+    color: #DAD9D9;
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-left: 45px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -17px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      background: url($img-dir + 'c-basket-information_title.png') 0 0 no-repeat;
+    }
+  }
+
+  p {
+    color: #C3C3C3;
+    font-family: "Exo 2";
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  &_expression {
+    font-size: 12px;
+    color: #9A9A9A;
+    font-weight: 500;
+  }
+
+  &_callback {
+    font-size: 12px;
+    color: #9A9A9A;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+.js-first_block,
+.js-second_block {
+  display: none;
+}
+
+//basket-result
+.basket-result {
+  padding: 15px 20px;
+  background-color: #F2F2F2;
+  border: 1px solid #D5D5D5;
+  margin-bottom: 10px;
+
+  &-quantity {
+    font-family: 'Exo 2 Condensed', sans-serif;
+    font-size: 25px;
+    color: #949494;
+    font-weight: 300;
+    margin-right: 30px;
+
+    &_number {
+      font-size: 25px;
+      color: #575757;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: 'Exo 2 Condensed', sans-serif;
+    }//_number
+
+    &_sum {
+      font-family: 'Exo 2 Condensed', sans-serif;
+      font-size: 25px;
+      color: #EF5532;
+      font-weight: 700;
+      text-transform: uppercase;
+    }//_sum
+  }//-quantity
+}
+
+//c-card-basket_all-sum
+
+.c-card-basket {
+  &_all-sum {
+    color: #909090;
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-weight: 300;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 10px;
+    }
+  }
+
+  &_layout {
+    text-align: center;
+    display: table;
+  }
+
+  &-action {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    &_img {
+      margin-bottom: 10px;
+    }//_img
+
+    &_text {
+      color: #909090;
+      font-family: "Fira Sans";
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }//_text
+
+    //for processed
+    &_quantity {
+      color: #1F1F1F;
+      font-family: "Exo 2 Condensed";
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 6px;
+    }//_quantity
+
+    &_sum {
+      font-family: "Exo 2 Condensed";
+      color: #C5C5C5;
+      font-size: 21px;
+      font-weight: 400;
+      span {
+        font-size: 14px;
+      }
+    }//_sum
+  }
+}
+
+.all-sum_number {
+  color: #C5C5C5;
+  font-family: "Exo 2 Condensed";
+  font-size: 21px;
+  font-weight: 400;
+}
+//delivery-method
+.delivery-method {
+
+  &_title {
+    width: 180px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &_body {
+    display: inline-block;
+    width: 66%;
+  }
+
+  &_radio input{
+    width: auto;
+  }
+
+  &_label {
+
+  }
+
+  &_item {
+    margin-bottom: 10px;
+  }
+
+  .delivery-method_radio {
+    display: none;
+  }
+
+  .delivery-method_radio + label {
+    display: inline-block;
+    color: #5A5A5A;
+    font-family: "Exo 2";
+    font-size: 12px;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .delivery-method_radio  label:first-child {
+    margin-right: 20px;
+  }
+
+  .delivery-method_radio + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    border: 1px solid #959595;
+    background-color: #fff;
+  }
+  .delivery-method_radio + label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 20px;
+    background-color: #E0E0E0;
+  }
+
+  .delivery-method_radio:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 20px;
+    background-color: #f9ab00;
+    @extend %transition;
+  }
+}//delivery-method
+
+///basket-processed
+.basket-processed {
+  text-align: center;
+  margin-bottom: 35px;
+
+  &_title {
+    font-family: 'Exo 2 Condensed', sans-serif;
+    color: #6C8795;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &_img {
+    padding-bottom: 24px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 32px;
+      margin-left: -16px;
+      height: 7px;
+      background: url($img-dir + 'service-icon-orange.png') 0 0 no-repeat;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &_text {
+    font-family: "Exo 2";
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    padding: 0 25%;
+
+    span {
+      color: #6C8795;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  .c-button {
+    margin: 0 5px;
+  }
+}
+
+//

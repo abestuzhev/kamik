@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-</div><!-- l-layout -->
+  </div><!-- l-layout -->
 
 </div>
 <!-- END header-basket -->
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="l-list_item">
-          <div class="basket-step basket-step--delivery">
+          <div class="basket-step basket-step--delivery" style="background-image: url('img/basket-step--delivery-active.png')">
             <div class="basket-step_title">2. Доставка</div>
           </div>
         </div>
@@ -77,27 +77,52 @@
             <form action="#">
               <div class="c-basket-form_selection">
                 <div class="c-basket-form_selection-item is-active">
-                  <input class="c-basket-form_radio" type="radio" id="form_face" name="basket-face" checked="checked">
-                  <label class="js-first_label" for="form_face">Физическое лицо</label>
+                  <input class="c-basket-form_radio" type="radio" id="delivery" name="delivery" checked="checked">
+                  <label class="js-first_label" for="delivery">Доставка</label>
                 </div>
                 <div class="c-basket-form_selection-item">
-                  <input class="c-basket-form_radio" type="radio" id="form_face-ur" name="basket-face">
-                  <label class="js-second_label" for="form_face-ur">Юридическое лицо</label>
+                  <input class="c-basket-form_radio" type="radio" id="form_face-ur" name="delivery">
+                  <label class="js-second_label" for="form_face-ur">Самовывоз</label>
                 </div>
               </div>
 
               <div class="js-first_block is-visible">
                 <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="name">Ваше имя: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="text" id="name">
+                  <label class="c-basket-form_label" for="delivery-city">Город: <span class="c-basket-form_star">*</span></label>
+                  <input class="c-basket-form_input" type="text" id="delivery-city">
                 </div>
                 <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="email">E-mail: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="text" id="email">
+                  <label class="c-basket-form_label" for="delivery-street">Улица: <span class="c-basket-form_star">*</span></label>
+                  <input class="c-basket-form_input" type="text" id="delivery-street">
                 </div>
                 <div class="c-basket-form_line">
-                  <label class="c-basket-form_label" for="phone">Телефон: <span class="c-basket-form_star">*</span></label>
-                  <input class="c-basket-form_input" type="tel" id="phone">
+                  <label class="c-basket-form_label" for="delivery-phone">Телефон: <span class="c-basket-form_star">*</span></label>
+                  <input class="c-basket-form_input" type="tel" id="delivery-phone">
+                </div>
+                <hr>
+                <div class="c-basket-form_line">
+                  <div class="delivery-method">
+                    <div class="delivery-method_title">Способ доставки: <span class="c-basket-form_star">*</span></div>
+                    <div class="delivery-method_body">
+                      <div class="delivery-method_item">
+                        <input class="delivery-method_radio" type="radio" name="delivery-method" id="moscow" checked="checked">
+                        <label class="delivery-method_label" for="moscow"><b>Москва и Московская область:</b> расчитываются
+                          индивидуально,в зависимости от количества мест,
+                          веса товара</label>
+                      </div>
+                      <div class="delivery-method_item">
+                        <input class="delivery-method_radio" type="radio" name="delivery-method" id="pickup">
+                        <label class="delivery-method_label" for="pickup"><b>Самовывоз:</b> cогласовав дату и время с менеджером
+                          компании, Вы можете самостоятельно забрать оплаченый
+                          товар с нашего склада</label>
+                      </div>
+                      <div class="delivery-method_item">
+                        <input class="delivery-method_radio" type="radio" name="delivery-method" id="other-region">
+                        <label class="delivery-method_label" for="other-region"><b>Другие регионы:</b> доставляем в Москве, Московской
+                          области до вашей транспортной компании</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 

@@ -1,5 +1,11 @@
 $(function(){
 
+    //viewportchecker
+    $('.about-number').addClass('hidden').viewportChecker({
+        classToAdd: 'visible',
+        offset: 100
+    });
+
     $('#Container').mixItUp({
     load: {
         filter: '.category-1'
@@ -79,5 +85,18 @@ $(function(){
 
 	///spiner
     $("#spinner").spinner();
+
+
+    $('.js-second_label').on('click', function(){
+        $(this).siblings('.c-basket-form_radio').find('input').attr('checked', 'checked');
+        $('.js-second_block').addClass('is-visible');
+        $('.js-first_block').removeClass('is-visible');
+    });
+
+    $('.js-first_label').on('click', function(){
+        $(this).siblings('.c-basket-form_radio').find('input').attr('checked', 'checked');
+        $('.js-first_block').addClass('is-visible');
+        $('.js-second_block').removeClass('is-visible');
+    });
 
 });
