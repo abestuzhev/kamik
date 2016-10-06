@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -52,7 +53,93 @@
   <div class="l-header-nav">
     <div class="l-layout">
       <ul class="header-nav">
-        <li class="header-nav_item"><a href="#" class="header-nav_link">Оборудоване по типу</a></li>
+        <li class="header-nav_item">
+          <a href="#" class="header-nav_link">Оборудоване по типу</a>
+
+          <!--submenu-->
+          <div class="l-submenu">
+            <div class="submenu">
+                <!--submenu-one-->
+                <ul class="submenu-one">
+                  <li class="submenu-one_item">
+                    <a href="#" class="submenu-one_link submenu-one_link--icon">Нейтральное</a>
+
+                    <div class="l-submenu-two">
+                      <a href="#" class="scroll-btn" id="js-up">
+                        <span class="scroll-btn-icon_up"></span>
+                      </a>
+                      <ul class="submenu-two">
+                        <li class="submenu-two_item">
+                          <a href="#" class="submenu-two_link submenu-two_link--icon">Категория 1</a>
+                        </li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 2</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 3</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 4</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 5</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 6</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 7</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 8</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 9</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 10</a></li>
+                        <li class="submenu-two_item"><a href="#" class="submenu-two_link">Категория 11</a></li>
+                      </ul>
+                      <a href="#" class="scroll-btn" id="js-down">
+                        <span class="scroll-btn-icon_down"></span>
+                      </a>
+                    </div>
+
+                  </li>
+                  <li class="submenu-one_item"><a href="#" class="submenu-one_link">Холодильное</a></li>
+                  <li class="submenu-one_item"><a href="#" class="submenu-one_link">Тепловое</a></li>
+                  <li class="submenu-one_item"><a href="#" class="submenu-one_link">Линии раздачи</a></li>
+                  <li class="submenu-one_item"><a href="#" class="submenu-one_link">Электромеханическое</a></li>
+                  <li class="submenu-one_item"><a href="#" class="submenu-one_link">Посудомоечное</a></li>
+                  <li class="submenu-one_item"><a href="#" class="submenu-one_link">Весовое</a></li>
+                  <li class="submenu-one_item"><a href="#" class="submenu-one_link">Упаковочное</a></li>
+                </ul>
+
+                <div class="wrap"></div>
+                <!--submenu-one-->
+              <div class="l-submenu-last">
+                <div class="submenu-three submenu-three-first">
+                <div class="submenu-three_column">
+                  <ul class="submenu-three_list">
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 1</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 2</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 3</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 4</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 5</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 6</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 7</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 8</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 9</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 10</a></li>
+                  </ul>
+                </div>
+                <div class="submenu-three_column">
+                  <ul class="submenu-three_list">
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 1</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 2</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 3</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 4</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 5</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 6</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 7</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 8</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 9</a></li>
+                    <li class="submenu-three_item"><a href="#" class="submenu-three_list">Ссылка 10</a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+
+
+            </div>
+          </div>
+          <!--submenu-->
+
+
+        </li>
         <li class="header-nav_item"><a href="#" class="header-nav_link">Оборудование по предприятию</a></li>
         <li class="header-nav_item"><a href="#" class="header-nav_link">Оборудование от Камик</a></li>
       </ul>
@@ -286,9 +373,11 @@
 
       <div id="tabs-container" class="c-tabs">
         <ul class="tabs-menu">
-          <li class="tabs-menu_line tabs-menu_line--one-tabs"></li>
-          <li class="tabs-menu_item current"><a href="#tab-1" class="tabs-menu_link">популярное нейтральное оборудованиек</a></li>
-          <li class="tabs-menu_line tabs-menu_line--one-tabs"></li>
+          <li class="tabs-menu_item tabs-menu_item--one_tabs">
+            <div class="tabs_line-one-left"></div>
+            <h2 class="tabs-menu_link">Популярное оборудование</h2>
+            <div class="tabs_line-one-right"></div>
+          </li>
         </ul>
         <div class="tab">
           <div id="tab-1" class="tab-content">
@@ -429,7 +518,7 @@
             <p>+7 (499) 641- 22- 22</p>
           </div>
           <div class="footer-contact_text">
-            <p><span class="c-text-icon c-text-icon--email-white">info@kamik-group.ru</p>
+            <p><span class="c-text-icon c-text-icon--email-white">info@kamik-group.<span></p>
             <p><span class="c-text-icon c-text-icon--place-white">г. Москва, ул. 2-я Звенигородская, д. 12, стр.5</span></p>
             <p><span class="c-text-icon c-text-icon--time-white">Пн - Чт.: c 9:30 до 18:00;</span><span>Пт.: c 9:30 до 17:00</span></p>
           </div>
@@ -486,6 +575,7 @@
 <script src="bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.umd.js"></script>
 <script src="js/jquery.mixitup.min.js"></script>
 <script src="js/jquery.spinner.min.js"></script>
+<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

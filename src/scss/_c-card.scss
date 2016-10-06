@@ -437,11 +437,14 @@
     padding-left: 25px;
     margin-bottom: 7px;
 
-    &_title {
-      color: #151515;
+    &-title {
       font-family: "Exo 2";
       font-size: 12px;
       font-weight: 400;
+
+       a {
+         color: #151515;
+       }
     }
 
     &::before {

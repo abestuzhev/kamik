@@ -1,7 +1,36 @@
 $(function(){
-	
 
-    $('#Container').mixItUp({
+	$('.fancybox-product').fancybox({
+		// maxWidth	: 550,
+		// maxHeight	: 600,
+		fitToView	: false,
+		// width		: '70%',
+		// height		: '70%',
+		autoSize	: true,
+		scrolling: 'no'
+		// closeClick	: false,
+		// openEffect	: 'none',
+		// closeEffect	: 'none'
+	});
+    
+	$('#js-up').on('click', function(e){
+		e.preventDefault();
+		$(".submenu-two").animate({"scrollTop":0},"1100");
+	});
+	
+	$('#js-down').on('click', function(e){
+		e.preventDefault();
+		var height = $(".submenu-two").height();
+		$(".submenu-two").animate({"scrollTop":height}, 1100);
+	});
+
+	$(".submenu-two_item").hover(function () {
+		$('.submenu-three-first').toggleClass('show-last-menu');
+	});
+
+
+
+	$('#Container').mixItUp({
     load: {
         filter: '.category-1'
     }

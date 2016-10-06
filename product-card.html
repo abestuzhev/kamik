@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -123,27 +124,27 @@
 
       <div class="c-card-product_section">
         <div class="c-card-product_advantages icon-availability">
-          <div class="c-card-product_advantages-title">Наличие</div>
+          <div class="c-card-product_advantages-title"><a href="#product-popap_availability" class="fancybox-product">Наличие</a></div>
           <span class="green">есть, </span><span class="blue">под заказ, </span><span class="red">нет</span>
         </div>
         <div class="c-card-product_advantages icon-terms">
-          <div class="c-card-product_advantages-title">Сроки производства</div>
+          <div class="c-card-product_advantages-title"><a href="#product-popap_terms" class="fancybox-product">Сроки производства</a></div>
           <span class="green">5 дней </span>
         </div>
         <div class="c-card-product_advantages icon-delivery">
-          <div class="c-card-product_advantages-title">Доставка и самовывоз</div>
+          <div class="c-card-product_advantages-title"><a href="#product-popap_delivery" class="fancybox-product">Доставка и самовывоз</a></div>
         </div>
         <div class="c-card-product_advantages icon-certificate">
-          <div class="c-card-product_advantages-title">Сертификация продукта</div>
+          <div class="c-card-product_advantages-title"><a href="#product-popap_certificate" class="fancybox-product">Сертификация продукта</a></div>
         </div>
         <div class="c-card-product_advantages icon-guarantee">
-          <div class="c-card-product_advantages-title">Гарантия</div>
+          <div class="c-card-product_advantages-title"><a href="#product-popap_guarantee" class="fancybox-product">Гарантия</a></div>
         </div>
         <div class="c-card-product_advantages icon-service">
-          <div class="c-card-product_advantages-title">Монтаж и сервис</div>
+          <div class="c-card-product_advantages-title"><a href="#product-popap_service" class="fancybox-product">Монтаж и сервис</a></div>
         </div>
         <div class="c-card-product_advantages icon-payment">
-          <div class="c-card-product_advantages-title">Оплата</div>
+          <div class="c-card-product_advantages-title"><a href="#product-popap_payment" class="fancybox-product">Оплата</a></div>
         </div>
       </div>
     </div><!--END c-card-goods-->
@@ -205,11 +206,11 @@
       <div id="tabs-container" class="c-tabs">
         <ul class="tabs-menu">
           <li class="tabs-menu_line tabs-menu_line--big"></li>
-          <li class="tabs-menu_item current"><a href="#tab-1" class="tabs-menu_link">Спецпредложения от Камик</a></li>
+          <li class="tabs-menu_item current"><a href="#tab-1" class="tabs-menu_link">Похожие товары</a></li>
           <li class="tabs-menu_line"></li>
-          <li class="tabs-menu_item"><a href="#tab-2" class="tabs-menu_link">Новинки</a></li>
+          <li class="tabs-menu_item"><a href="#tab-2" class="tabs-menu_link">С этим товаром покупают</a></li>
           <li class="tabs-menu_line"></li>
-          <li class="tabs-menu_item"><a href="#tab-3" class="tabs-menu_link">Другие бренды</a></li>
+          <li class="tabs-menu_item"><a href="#tab-3" class="tabs-menu_link">Отзывы</a></li>
           <li class="tabs-menu_line tabs-menu_line--big"></li>
         </ul>
         <div class="tab">
@@ -548,12 +549,65 @@
 <a href="#0" class="cd-top">
   <span class="cd-top_text">Вверх</span>
 </a>
+<!--START popap-->
+<div class="product-popap" id="product-popap_availability">
+  <div class="product-popap_title">Наличие</div>
+  <div class="product-popap_text">Мы гарантируем минимальные сроки доставки приобретенного товара. Доставка по России осуществляется через выбранную вами транспортную компанию. Наша транспортная служба доставит ваш заказ по Москве до терминала любой транспортной компании в пределах МКАД. Вы можете самостоятельно забрать товар с нашего склада, предварительно согласовав с менеджером дату отгрузки.</div>
+  <strong>Для получения более подробной информации обращайтесь по телефонам</strong>
+  <div class="product-popap_left">+7 (499) 641-1111</div>
+  <div class="product-popap_right">+7 (499) 641-2222 </div>
+</div>
+<div class="product-popap" id="product-popap_terms">
+  <div class="product-popap_title">Сроки производства</div>
+  <div class="product-popap_text">Мы гарантируем минимальные сроки доставки приобретенного товара. Доставка по России осуществляется через выбранную вами транспортную компанию. Наша транспортная служба доставит ваш заказ по Москве до терминала любой транспортной компании в пределах МКАД. Вы можете самостоятельно забрать товар с нашего склада, предварительно согласовав с менеджером дату отгрузки.</div>
+  <strong>Для получения более подробной информации обращайтесь по телефонам</strong>
+  <div class="product-popap_left">+7 (499) 641-1111</div>
+  <div class="product-popap_right">+7 (499) 641-2222 </div>
+</div>
+<div class="product-popap" id="product-popap_delivery">
+  <div class="product-popap_title">Доставка и самовывоз</div>
+  <div class="product-popap_text">Мы гарантируем минимальные сроки доставки приобретенного товара. Доставка по России осуществляется через выбранную вами транспортную компанию. Наша транспортная служба доставит ваш заказ по Москве до терминала любой транспортной компании в пределах МКАД. Вы можете самостоятельно забрать товар с нашего склада, предварительно согласовав с менеджером дату отгрузки.</div>
+  <strong>Для получения более подробной информации обращайтесь по телефонам</strong>
+  <div class="product-popap_left">+7 (499) 641-1111</div>
+  <div class="product-popap_right">+7 (499) 641-2222 </div>
+</div>
+<div class="product-popap" id="product-popap_certificate">
+  <div class="product-popap_title">Сертификация продукта</div>
+  <div class="product-popap_text">Весь товар, поставляемый Торговым Домом «КАМИК», сертифицирован и соответствует установленным нормам безопасности. Мы гарантируем стабильное качество поставляемого товара и оказываемых услуг.</div>
+  <strong>Для получения более подробной информации обращайтесь по телефонам</strong>
+  <div class="product-popap_left">+7 (499) 641-1111</div>
+  <div class="product-popap_right">+7 (499) 641-2222 </div>
+</div>
+<div class="product-popap" id="product-popap_guarantee">
+  <div class="product-popap_title">Гарантия</div>
+  <div class="product-popap_text">Весь товар, поставляемый Торговым Домом «КАМИК», соответствует российским и мировым стандартам, имеет все необходимые сертификаты качества. Сервисная служба компании обеспечивает гарантийное и послегарантийное обслуживание оборудования.</div>
+  <strong>Для получения более подробной информации обращайтесь по телефонам</strong>
+  <div class="product-popap_left">+7 (499) 641-1111</div>
+  <div class="product-popap_right">+7 (499) 641-2222 </div>
+</div>
+<div class="product-popap" id="product-popap_service">
+  <div class="product-popap_title">Монтаж и сервис</div>
+  <div class="product-popap_text">Сервисная служба компании осуществляет монтаж, шефмонтаж, любые ремонтные и сервисные работы. Наши специалисты быстро, качественно и в короткие сроки выполнят свою работу.</div>
+  <strong>Для получения более подробной информации обращайтесь по телефонам</strong>
+  <div class="product-popap_left">+7 (499) 641-1111</div>
+  <div class="product-popap_right">+7 (499) 641-2222 </div>
+</div>
+<div class="product-popap" id="product-popap_payment">
+  <div class="product-popap_title">Оплата</div>
+  <div class="product-popap_text">Мы гарантируем минимальные сроки доставки приобретенного товара. Доставка по России осуществляется через выбранную вами транспортную компанию. Наша транспортная служба доставит ваш заказ по Москве до терминала любой транспортной компании в пределах МКАД. Вы можете самостоятельно забрать товар с нашего склада, предварительно согласовав с менеджером дату отгрузки.</div>
+  <strong>Для получения более подробной информации обращайтесь по телефонам</strong>
+  <div class="product-popap_left">+7 (499) 641-1111</div>
+  <div class="product-popap_right">+7 (499) 641-2222 </div>
+</div>
+
+<!--ENd popap-->
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.js"></script>
 <script src="bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.umd.js"></script>
 <script src="js/jquery.mixitup.min.js"></script>
 <script src="js/jquery.spinner.min.js"></script>
+<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

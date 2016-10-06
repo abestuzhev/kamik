@@ -186,8 +186,11 @@
 .tabs-menu {
   // height: 30px;
   // display: inline-block;
+  width: 100%;
+  overflow: hidden;
   white-space: nowrap;
-  text-align: justify;
+
+  text-align: center;
   margin-bottom: 26px;
 }
 
@@ -203,16 +206,34 @@
   &--big {
     width: 13%;
   }
-
-  &--one-tabs {
-    width: 29%;
-  }
 }
+
+.tabs_line-one-left {
+  position: absolute;
+  right: 105%;
+  top: 20px;
+  width: 500%;
+  height: 1px;
+  background-color: #fff;
+}
+.tabs_line-one-right {
+  position: absolute;
+  left: 105%;
+  top: 20px;
+  width: 500%;
+  height: 1px;
+  background-color: #fff;
+}
+
 
 .tabs-menu_item {
   display: inline-block;
   border: 1px solid #FFF;
   border-radius: 50px;
+
+  &--one_tabs {
+    position: relative;
+  }
 }
 
 .current   {
@@ -922,4 +943,40 @@
   }
 }
 
-//
+//product-popap
+.product-popap {
+  width: 550px;
+  height: auto;
+  //overflow: auto;
+  @include clear;
+  text-align: justify;
+  font-size: 13px;
+
+  &_title {
+    color: #7e96a2;
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }//_title
+
+  &_text {
+    text-align: justify;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }//_text
+
+  &_left {
+    color: #7e96a2;
+    font-size: 24px;
+    float: left;
+  }//_left
+
+  &_right {
+    color: #7e96a2;
+    font-size: 24px;
+    float: right;
+  }//_right
+}
