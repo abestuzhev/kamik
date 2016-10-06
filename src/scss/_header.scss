@@ -68,11 +68,11 @@
 .header-nav {
   text-align: justify;
   @include full-width;
-  padding: 6px 0;
   font-size: 0;
 
   &_item {
     display: inline-block;
+    position: relative;
 
     &:hover {
       background-color: #6384a2;
@@ -86,7 +86,7 @@
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 10px 30px 10px 15px;
+    padding: 16px 30px 16px 15px;
     position: relative;
 
     &::after {
@@ -159,39 +159,47 @@
 }
 
 
-.l-submenu-two {
-  display: none;
-  overflow: hidden;
-  width: 215px;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  border-right: 1px solid #9a9a9a;
-  min-width: 215px;
-  max-width: 215px;
-  height: 360px;
-}
+//.l-submenu-two {
+//  display: none;
+//  overflow: hidden;
+//  width: 100%;
+//  position: absolute;
+//  top: 0;
+//  left: 100%;
+//  border-right: 1px solid #9a9a9a;
+//  min-width: 215px;
+//  max-width: 215px;
+//  height: 360px;
+//}
 
 .submenu {
-  box-sizing: content-box;
-  width: 100%;
-  position: absolute;
-  z-index: 999;
-  top: 47px;
-  left: -120px;
-  background-color: #b1faff;
-  padding: 20px 120px;
-  padding-bottom: 45px;
-  overflow: hidden;
+  //box-sizing: content-box;
+  //width: 100%;
+  //position: absolute;
+  //z-index: 999;
+  //top: 47px;
+  //left: -120px;
+  //background-color: #b1faff;
+  //padding: 20px 120px;
+  //padding-bottom: 45px;
+  //overflow: hidden;
 
 
   ///////////////
   &-one {
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    top: 52px;
+    left: 0px;
     box-sizing: border-box;
-    display: table-cell;
-    width: 225px;
+    //display: table-cell;
+    width: 100%;
     font-size: 18px;
-    border-right: 1px solid #9a9a9a;
+    border-right: 2px solid #9a9a9a;
+    border-right: 2px solid rgba(154, 154, 154, 0.25);
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.15);
+    visibility: hidden;
 
     &_item {
       position: relative;
@@ -249,16 +257,22 @@
   /////////////
 
   &-two {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 100%;
     padding: 8px 0;
     padding-left: 8px;
-    border-right: 1px solid #9a9a9a;
-    width: 235px;
-    height: 321px;
-    overflow: auto;
+    border-right: 2px solid #9a9a9a;
+    border-right: 2px solid rgba(154, 154, 154, 0.25);
+    //width: 235px;
+    width: 210%;
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.15);
+    visibility: hidden;
 
-    //&::-webkit-scrollbar {
-    //  width: 0;
-    //}
+    &_column {
+      display: inline-block;
+    }
 
     &_item {
       position: relative;
@@ -307,50 +321,20 @@
   }//_two
 }
 
-//.wrap {
-//  display: table-cell;
-//  background-color: #000;
-//  width: 215px;
-//  overflow: hidden;
-//}
-.scroll-btn {
-  display: block;
-  text-align: center;
-  padding: 2px 0;
-  //height: 4px;
-
-  &-icon_up {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid #707070;
-    border-left: 4px solid transparent;
-  }
-  &-icon_down {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 4px solid #707070;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid transparent;
-  }
-}
 
 //submenu-three
 .submenu-three {
+  border-left: 2px solid #6384A2;
   position: absolute;
   z-index: 20;
   top: 0;
-  left: 46%;
+  left: 100%;
   padding: 20px 30px;
+  visibility: hidden;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.15);
 
-  &-first {
-
-    display: none;
-  }
 
   &_column {
     display: inline-block;
@@ -359,25 +343,30 @@
   }
 
   &_item {
+    text-align: left;
     margin-bottom: 10px;
   }
 
-  &_list {
-    font-family: "Exo 2";
-    font-size: 14px;
+  &_link {
+    font-family: "Exo 2 Condensed";
+    font-size: 16px;
     font-weight: 400;
-    color: #696969;
-    padding: 2px 0;
+    padding: 4px 0;
+    white-space: nowrap;
+    color: #6384A2;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
-.submenu-one_item:hover .l-submenu-two {
-  display: block;
-}
-.submenu-two_item:hover .submenu-three-first {
-  display: block;
+.header-nav_item:hover .submenu-one {
+  visibility: visible;
 }
 
-.show-last-menu {
-  display: block;
+.submenu-one_item:hover .submenu-two {
+  visibility: visible;
+}
+.submenu-two_item:hover .submenu-three {
+  visibility: visible;
 }

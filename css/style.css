@@ -2038,14 +2038,14 @@ input[type="checkbox"] {
 
 .header-nav {
   text-align: justify;
-  padding: 6px 0;
   font-size: 0; }
   .header-nav::after {
     content: '';
     width: 100%;
     display: inline-block; }
   .header-nav_item {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
     .header-nav_item:hover {
       background-color: #6384a2; }
   .header-nav_link {
@@ -2054,7 +2054,7 @@ input[type="checkbox"] {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 10px 30px 10px 15px;
+    padding: 16px 30px 16px 15px;
     position: relative; }
     .header-nav_link::after {
       content: '';
@@ -2100,153 +2100,131 @@ input[type="checkbox"] {
       font-weight: 700;
       text-transform: uppercase; }
 
-.l-submenu-two {
-  display: none;
-  overflow: hidden;
-  width: 215px;
+.submenu-one {
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  top: 52px;
+  left: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  border-right: 2px solid #9a9a9a;
+  border-right: 2px solid rgba(154, 154, 154, 0.25);
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  visibility: hidden; }
+  .submenu-one_item {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    cursor: pointer; }
+    .submenu-one_item:hover {
+      background-color: #6384a2; }
+    .submenu-one_item:hover .submenu-one_link {
+      color: #fff; }
+    .submenu-one_item:hover .submenu-one_link--icon::after {
+      content: '';
+      border-left: 4px solid #fff; }
+  .submenu-one_link {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #979696;
+    font-family: "Exo 2 Condensed";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 20px; }
+    .submenu-one_link--icon::after {
+      content: '';
+      position: absolute;
+      top: 17px;
+      right: 0;
+      border-top: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid #979696; }
+
+.submenu-two {
+  background-color: #fff;
   position: absolute;
   top: 0;
   left: 100%;
-  border-right: 1px solid #9a9a9a;
-  min-width: 215px;
-  max-width: 215px;
-  height: 360px; }
-
-.submenu {
-  box-sizing: content-box;
-  width: 100%;
-  position: absolute;
-  z-index: 999;
-  top: 47px;
-  left: -120px;
-  background-color: #b1faff;
-  padding: 20px 120px;
-  padding-bottom: 45px;
-  overflow: hidden; }
-  .submenu-one {
-    box-sizing: border-box;
-    display: table-cell;
-    width: 225px;
+  padding: 8px 0;
+  padding-left: 8px;
+  border-right: 2px solid #9a9a9a;
+  border-right: 2px solid rgba(154, 154, 154, 0.25);
+  width: 210%;
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  visibility: hidden; }
+  .submenu-two_column {
+    display: inline-block; }
+  .submenu-two_item {
+    position: relative;
+    margin-bottom: 5px; }
+    .submenu-two_item:hover {
+      background-color: #6384a2; }
+    .submenu-two_item:hover .submenu-two_link {
+      color: #fff; }
+    .submenu-two_item:hover .submenu-two_link--icon::after {
+      content: '';
+      border-left: 4px solid #fff; }
+  .submenu-two_link {
+    position: relative;
+    color: #6384A2;
+    font-family: "Exo 2 Condensed";
     font-size: 18px;
-    border-right: 1px solid #9a9a9a; }
-    .submenu-one_item {
-      position: relative;
-      font-size: 18px;
-      margin-bottom: 5px;
-      display: block;
-      cursor: pointer; }
-      .submenu-one_item:hover {
-        background-color: #6384a2; }
-      .submenu-one_item:hover .submenu-one_link {
-        color: #fff; }
-      .submenu-one_item:hover .submenu-one_link--icon::after {
-        content: '';
-        border-left: 4px solid #fff; }
-    .submenu-one_link {
-      box-sizing: border-box;
-      display: inline-block;
-      padding: 10px 15px;
-      color: #979696;
-      font-family: "Exo 2 Condensed";
-      font-size: 18px;
-      font-weight: 400;
-      text-transform: uppercase;
-      position: relative;
-      padding-right: 20px; }
-      .submenu-one_link--icon::after {
-        content: '';
-        position: absolute;
-        top: 17px;
-        right: 0;
-        border-top: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-bottom: 4px solid transparent;
-        border-left: 4px solid #979696; }
-  .submenu-two {
-    padding: 8px 0;
-    padding-left: 8px;
-    border-right: 1px solid #9a9a9a;
-    width: 235px;
-    height: 321px;
-    overflow: auto; }
-    .submenu-two_item {
-      position: relative;
-      margin-bottom: 5px; }
-      .submenu-two_item:hover {
-        background-color: #6384a2; }
-      .submenu-two_item:hover .submenu-two_link {
-        color: #fff; }
-      .submenu-two_item:hover .submenu-two_link--icon::after {
-        content: '';
-        border-left: 4px solid #fff; }
-    .submenu-two_link {
-      position: relative;
-      color: #6384A2;
-      font-family: "Exo 2 Condensed";
-      font-size: 18px;
-      font-weight: 300;
-      padding: 5px 14px;
-      padding-right: 45px;
-      display: inline-block; }
-      .submenu-two_link--icon::after {
-        content: '';
-        position: absolute;
-        top: 12px;
-        right: 0;
-        border-top: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-bottom: 4px solid transparent;
-        border-left: 4px solid #979696; }
-
-.scroll-btn {
-  display: block;
-  text-align: center;
-  padding: 2px 0; }
-  .scroll-btn-icon_up {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid #707070;
-    border-left: 4px solid transparent; }
-  .scroll-btn-icon_down {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-top: 4px solid #707070;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-left: 4px solid transparent; }
+    font-weight: 300;
+    padding: 5px 14px;
+    padding-right: 45px;
+    display: inline-block; }
+    .submenu-two_link--icon::after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: 0;
+      border-top: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid #979696; }
 
 .submenu-three {
+  border-left: 2px solid #6384A2;
   position: absolute;
   z-index: 20;
   top: 0;
-  left: 46%;
-  padding: 20px 30px; }
-  .submenu-three-first {
-    display: none; }
+  left: 100%;
+  padding: 20px 30px;
+  visibility: hidden;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.15); }
   .submenu-three_column {
     display: inline-block;
     margin-right: 20px; }
   .submenu-three_item {
+    text-align: left;
     margin-bottom: 10px; }
-  .submenu-three_list {
-    font-family: "Exo 2";
-    font-size: 14px;
+  .submenu-three_link {
+    font-family: "Exo 2 Condensed";
+    font-size: 16px;
     font-weight: 400;
-    color: #696969;
-    padding: 2px 0; }
+    padding: 4px 0;
+    white-space: nowrap;
+    color: #6384A2; }
+    .submenu-three_link:hover {
+      text-decoration: underline; }
 
-.submenu-one_item:hover .l-submenu-two {
-  display: block; }
+.header-nav_item:hover .submenu-one {
+  visibility: visible; }
 
-.submenu-two_item:hover .submenu-three-first {
-  display: block; }
+.submenu-one_item:hover .submenu-two {
+  visibility: visible; }
 
-.show-last-menu {
-  display: block; }
+.submenu-two_item:hover .submenu-three {
+  visibility: visible; }
 
 .footer {
   background: url("../img/footer-bg.jpg") left top no-repeat;
