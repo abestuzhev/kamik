@@ -9,6 +9,10 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px;
+
+  &--center {
+    text-align: center;
+  }
 }
 .c-h1_title-page {
   text-align: left;

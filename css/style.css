@@ -689,6 +689,8 @@ input[type="checkbox"] {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px; }
+  .c-h1_title-index--center {
+    text-align: center; }
 
 .c-h1_title-page {
   text-align: left;
