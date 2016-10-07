@@ -1,6 +1,6 @@
 
 
-.c-h1_title {
+.c-h1_title-index {
   text-align: left;
   color: #6C8795;
   font-family: 'Exo 2 Condensed', sans-serif;
@@ -10,7 +10,7 @@
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-.c-h2_title {
+.c-h1_title-page {
   text-align: left;
   color: #232323;
   font-family: 'Exo 2 Condensed', sans-serif;
@@ -19,14 +19,30 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 35px;
 
   &--center {
     padding: 0 10%;
     text-align: center;
   }
 }
-.c-h3_title {
+.c-h2_title-page {
+  text-align: left;
+  color: #232323;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 25px;
+
+  &--center {
+    padding: 0 10%;
+    text-align: center;
+  }
+}
+.c-h2_title-list {
   text-align: left;
   color: #7E96A2;
   font-family: 'Exo 2 Condensed', sans-serif;

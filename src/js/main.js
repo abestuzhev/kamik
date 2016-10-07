@@ -108,7 +108,7 @@ $(function(){
 	});
 
 	///spiner
-    $("#spinner").spinner();
+    $(".spinner").spinner();
 
 
     $('.js-second_label').on('click', function(){
