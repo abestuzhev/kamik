@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
-    <link rel="stylesheet" href="bower_components/Readmore/index.js">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -197,14 +196,21 @@
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Мартел</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">ТММ</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Криспи</a></li>
+                  <li class="filter-goods_item"><a href="#" class="filter-goods_link">Hessen</a></li>
+                  <li class="filter-goods_item"><a href="#" class="filter-goods_link">Мартел</a></li>
+                  <li class="filter-goods_item"><a href="#" class="filter-goods_link">ТММ</a></li>
+                  <li class="filter-goods_item"><a href="#" class="filter-goods_link">Криспи</a></li>
                 </ul>
                 <!-- <a href="#" class="c-show-all c-show-all--left">показать все</a> -->
               </div>
               <div class="filter-goods">
                 <div class="filter-goods_title">По предприятию:</div>
-                <ul class="filte-goodsr_list">
+                <ul class="filter-goods_list">
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для ресторана</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для кафе</a></li>
+                  <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для фаст-фуда</a></li>
+                  <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для пиццерии</a></li>
+                  <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для баров</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для фаст-фуда</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для пиццерии</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для баров</a></li>
@@ -530,15 +536,18 @@
   <script src="js/jquery.mixitup.min.js"></script>
   <script src="js/jquery.spinner.min.js"></script>
   <script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script src="js/readmore.js"></script>
   <script src="js/main.js"></script>
-  <script>
-  $(function(){
-    $('filter-goods_list').readmore({
-      speed: 75,
-      lessLink: '<a href="#" class="c-show-all">показать все</a>'
-    });
-  });
+  <!-- <script>
+    $('.filter-goods_list').readmore({
+      speed: 200,
+      moreLink: '<a href="#" class="c-show-all c-show-all--left">показать все</a>',
+      lessLink: '<a href="#" class="c-show-all c-show-all--up-left">скрыть список</a>',
+      embedCSS: true,
+      blockCSS: 'display: block; width: 100%;',
+      startOpen: false
 
-  </script>
+    });
+  </script> -->
   </body>
 </html>

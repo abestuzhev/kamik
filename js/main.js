@@ -130,6 +130,14 @@ $(function(){
         $('.js-second_block').removeClass('is-visible');
     });
 
-	
+	//
+		$('.filter-goods_list').readmore({
+			speed: 200,
+			moreLink: '<a href="#" class="c-show-all c-show-all--left">показать все</a>',
+			lessLink: '<a href="#" class="c-show-all c-show-all--up-left">скрыть список</a>',
+			embedCSS: true,
+			blockCSS: 'display: block; width: 100%;',
+			startOpen: false
 
+		});
 });

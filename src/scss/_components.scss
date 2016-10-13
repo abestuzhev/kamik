@@ -695,6 +695,23 @@
     }
   }
 
+  &--up-left {
+    padding-top: 15px;
+    padding-bottom: 0;
+    text-align: left;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 6px;
+      top: 3px;
+      left: 5px;
+      background: url($img-dir + 'down-icon--up.png') 0 0 no-repeat;
+      @extend %transition;
+    }
+  }
+
   &--left {
     text-align: left;
     &::after {

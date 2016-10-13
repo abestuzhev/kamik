@@ -469,8 +469,10 @@
   }//_title
 
   &_list {
+    overflow: hidden;
     margin-left: 10px;
     max-height: 172px;
+    margin-bottom: 10px;
   }//_list
 
   &_item {
@@ -987,7 +989,8 @@
 .popap-callback,
 .popap-processed,
 .popap-question,
-.popap-discount {
+.popap-discount,
+.popap-complex {
   display: none;
   padding: 10px 40px;
   padding-bottom: 20px;
@@ -1009,7 +1012,7 @@
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .popap_field {
@@ -1052,4 +1055,15 @@
 }
 .popap-discount_title {
   white-space: nowrap;
+}
+
+
+
+//slick
+.slick-prev:before, .slick-next:before {
+  font-size: 26px;
+}
+
+.slick-prev {
+    left: -30px;
 }
