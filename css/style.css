@@ -2021,9 +2021,12 @@ input[type="checkbox"] {
 
 .popap_title {
   text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
-  font-family: "Exo 2"; }
+  color: #6C8795;
+  font-family: 'Exo 2 Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
 
 .popap_field {
   margin-bottom: 14px; }
