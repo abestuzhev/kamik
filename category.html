@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="bower_components/Readmore/index.js">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -197,7 +198,7 @@
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">ТММ</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Криспи</a></li>
                 </ul>
-                <a href="#" class="c-show-all c-show-all--left">показать все</a>
+                <!-- <a href="#" class="c-show-all c-show-all--left">показать все</a> -->
               </div>
               <div class="filter-goods">
                 <div class="filter-goods_title">По предприятию:</div>
@@ -208,7 +209,7 @@
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для пиццерии</a></li>
                   <li class="filter-goods_item"><a href="#" class="filter-goods_link">Для баров</a></li>
                 </ul>
-                <a href="#" class="c-show-all c-show-all--left">показать все</a>
+                <!-- <a href="#" class="c-show-all c-show-all--left">показать все</a> -->
               </div>
             </div>
 
@@ -530,5 +531,14 @@
   <script src="js/jquery.spinner.min.js"></script>
   <script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
   <script src="js/main.js"></script>
+  <script>
+  $(function(){
+    $('filter-goods_list').readmore({
+      speed: 75,
+      lessLink: '<a href="#" class="c-show-all">показать все</a>'
+    });
+  });
+
+  </script>
   </body>
 </html>

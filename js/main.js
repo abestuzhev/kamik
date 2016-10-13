@@ -12,12 +12,19 @@ $(function(){
 		// openEffect	: 'none',
 		// closeEffect	: 'none'
 	});
-    
+
+	$('.fancybox').fancybox({
+		// Width	: 380,
+		fitToView	: false,
+		autoSize	: true,
+		scrolling: 'no'
+	});
+
 	$('#js-up').on('click', function(e){
 		e.preventDefault();
 		$(".submenu-two").animate({"scrollTop":0},"1100");
 	});
-	
+
 	$('#js-down').on('click', function(e){
 		e.preventDefault();
 		var height = $(".submenu-two").height();
@@ -122,5 +129,7 @@ $(function(){
         $('.js-first_block').addClass('is-visible');
         $('.js-second_block').removeClass('is-visible');
     });
+
+	
 
 });

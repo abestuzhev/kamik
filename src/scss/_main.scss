@@ -982,3 +982,71 @@
     float: right;
   }//_right
 }
+
+//popap
+.popap-callback,
+.popap-processed,
+.popap-question,
+.popap-discount {
+  display: none;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  height: auto;
+  @include clear;
+  text-align: center;
+  font-size: 13px;
+
+  .c-button {
+    margin-top: 10px;
+  }
+}
+
+
+.popap_title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: "Exo 2";
+}
+
+.popap_field {
+  margin-bottom: 14px;
+}
+
+.popap-label {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.popap-input, .popap-textarea {
+  width: 100%;
+}
+
+.popap-textarea {
+  height: 100px;
+  padding: 10px;
+}
+//
+
+.popap-processed {
+
+  &_img {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+.popap-discount_title {
+  white-space: nowrap;
+}

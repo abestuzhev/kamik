@@ -5,14 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/scss/_main.scss" line="823" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca0e60a4-44b5-45fa-bc97-d9aa3203c491" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket-1.html" afterPath="$PROJECT_DIR$/basket-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket-2.html" afterPath="$PROJECT_DIR$/basket-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket-3.html" afterPath="$PROJECT_DIR$/basket-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket-4.html" afterPath="$PROJECT_DIR$/basket-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-    </list>
+    <list default="true" id="ca0e60a4-44b5-45fa-bc97-d9aa3203c491" name="Default" comment="" />
     <ignored path="kamik.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -333,12 +326,12 @@
       <workItem from="1475473540361" duration="831000" />
       <workItem from="1475667903709" duration="27953000" />
       <workItem from="1475757143538" duration="10742000" />
-      <workItem from="1475809235806" duration="3696000" />
+      <workItem from="1475809235806" duration="4896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98745000" />
+    <option name="totallyTimeSpent" value="99945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -740,7 +733,6 @@
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,7 +744,6 @@
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

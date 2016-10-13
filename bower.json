@@ -20,6 +20,7 @@
     "slick-carousel": "^1.6.0",
     "jQuery.dotdotdot": "dotdotdot#^1.8.3",
     "jQuery-viewport-checker": "^1.8.7",
-    "fancybox": "^2.1.5"
+    "fancybox": "^2.1.5",
+    "Readmore": "https://github.com/jedfoster/Readmore.js"
   }
 }

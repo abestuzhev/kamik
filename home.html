@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -39,7 +40,7 @@
           <h3 class="header_title">Контакты:</h3>
           <p class="header_text"><span class="c-text-icon c-text-icon--number">Офис продаж: +7(499) 641-11-11;</span><span>Сервисная служба: +7(499) 641- 22- 22;</span></p>
           <p class="header_text"><span class="c-text-icon c-text-icon--email">info@kamik-group.ru</span><span class="c-text-icon c-text-icon--place">г. Москва, ул. 2-я Звенигородская, д. 12, стр.5</span></p>
-          <a href="#" class="c-button">Заказать звонок</a>
+          <a href="#popap-callback" class="c-button fancybox">Заказать звонок</a>
         </div>
         <div class="l-header_basket">
           <h3 class="header_title">Корзина:</h3>
@@ -175,7 +176,7 @@
             <div class="ad-unit_img"><img src="img/adunit-1.png" alt=""></div>
             <div class="ad-unit_body">
               <div class="ad-unit_text">Задать вопрос консультанту</div>
-              <a href="#" class="c-button">Задать</a>
+              <a href="#popap-question" class="c-button fancybox">Задать</a>
             </div><!-- ad-unit_body -->
           </div><!-- ad-unit_item -->
 
@@ -809,7 +810,7 @@
             <div class="discount_img">%</div>
             <div class="discount_body">
               <div class="discount_title">Скидка на продукцию от Камик</div>
-              <a href="#" class="c-button">Получить скидку</a>
+              <a href="#popap-discount" class="c-button fancybox">Получить скидку</a>
             </div>
           </div>
         </div>
@@ -1018,6 +1019,71 @@
     <a href="#0" class="cd-top">
       <span class="cd-top_text">Вверх</span>
     </a>
+
+    <!-- popap -->
+    <div class="popap-callback" id="popap-callback">
+      <div class="popap_title">Заказать обратный звонок</div>
+      <form action="#">
+        <div class="popap_field">
+          <label class="popap-label" for="callback-name">Ваше имя</label>
+          <input class="popap-input" type="text" id="callback-name">
+        </div>
+        <div class="popap_field">
+          <label class="popap-label" for="callback-tel">Ваш телефон</label>
+          <input class="popap-input" type="tel" id="callback-tel">
+        </div>
+        <div class="popap_field">
+          <label class="popap-label" for="callback-time">Время звонка</label>
+          <input class="popap-input" type="text" id="callback-time">
+        </div>
+        <button type="button" name="button" class="c-button c-button--right">Отправить заявку</button>
+      </form>
+    </div>
+      <!--  -->
+    <div class="popap-processed" id="popap-processed">
+      <div class="popap_title">Ваш запрос на звонок успешно принят</div>
+      <div class="popap-processed_img"><img src="img/processed-icon.png" alt=""></div>
+      <div class="popap-processed_text">Наш менеджер перезвонит Вам в назначенное время.</div>
+    </div>
+      <!--  -->
+    <div class="popap-question" id="popap-question">
+      <div class="popap_title">Задать вопрос консультанту</div>
+      <form action="#">
+        <div class="popap_field">
+          <label class="popap-label" for="question-name">Ваше имя</label>
+          <input class="popap-input" type="text" id="question-name">
+        </div>
+        <div class="popap_field">
+          <label class="popap-label" for="question-email">Ваш телефон</label>
+          <input class="popap-input" type="tel" id="question-email">
+        </div>
+        <div class="popap_field">
+          <label class="popap-label" for="callback-email">Ваш вопрос</label>
+          <textarea class="popap-textarea" name="name" row="5" ></textarea>
+        </div>
+        <button type="button" name="button" class="c-button c-button--right">Отправить заявку</button>
+      </form>
+    </div>
+      <!--  -->
+    <div class="popap-discount" id="popap-discount">
+      <div class="popap_title popap-discount_title">Получить скидку</div>
+      <form action="#">
+        <div class="popap_field">
+          <label class="popap-label" for="discount-name">Ваше имя</label>
+          <input class="popap-input" type="text" id="discountn-name">
+        </div>
+        <div class="popap_field">
+          <label class="popap-label" for="discount-email">Ваш телефон</label>
+          <input class="popap-input" type="tel" id="discount-email">
+        </div>
+        <div class="popap_field">
+          <label class="popap-label" for="callback-email">Желаемое оборудование</label>
+          <textarea class="popap-textarea" name="name" row="5" ></textarea>
+        </div>
+        <button type="button" name="button" class="c-button c-button--right">Отправить заявку</button>
+      </form>
+    </div>
+
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/slick-carousel/slick/slick.js"></script>
