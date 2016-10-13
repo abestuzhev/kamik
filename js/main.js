@@ -1,20 +1,12 @@
 $(function(){
 
 	$('.fancybox-product').fancybox({
-		// maxWidth	: 550,
-		// maxHeight	: 600,
 		fitToView	: false,
-		// width		: '70%',
-		// height		: '70%',
 		autoSize	: true,
 		scrolling: 'no'
-		// closeClick	: false,
-		// openEffect	: 'none',
-		// closeEffect	: 'none'
 	});
 
 	$('.fancybox').fancybox({
-		// Width	: 380,
 		fitToView	: false,
 		autoSize	: true,
 		scrolling: 'no'
@@ -36,7 +28,7 @@ $(function(){
 	});
 
 
-
+//mixItUp
 	$('#Container').mixItUp({
     load: {
         filter: '.category-1'
@@ -61,6 +53,8 @@ $(function(){
         $(".tab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
+
+	//slick
 
 	$('.deals_slider').slick({
 		autoplay: false,
@@ -90,11 +84,8 @@ $(function(){
 	});
 
 	var offset = 300,
-		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
 		offset_opacity = 1200,
-		//duration of the top scrolling animation (in ms)
 		scroll_top_duration = 700,
-		//grab the "back to top" link
 		$back_to_top = $('.cd-top');
 
 	//hide or show the "back to top" link
@@ -130,7 +121,7 @@ $(function(){
         $('.js-second_block').removeClass('is-visible');
     });
 
-	//
+	//readmore
 		$('.filter-goods_list').readmore({
 			speed: 200,
 			moreLink: '<a href="#" class="c-show-all c-show-all--left">показать все</a>',
@@ -138,6 +129,19 @@ $(function(){
 			embedCSS: true,
 			blockCSS: 'display: block; width: 100%;',
 			startOpen: false
-
 		});
+
+		//call-popap
+		$('#fast-call').submit(function(event) {
+
+        $("#thx").css('margin-left', -$("#thx").outerWidth() / 2); // Выравниваем по центру окно относительно его ширины
+
+        $("#thx").fadeIn(500); // Показываем окно
+
+        setTimeout(function() {
+          $("#thx").fadeOut(500); // Скрываем его
+        }, 5000); // 5000 = 5 секунд
+
+        // Отменяет отправку формы. Это вместо retrun false; Хотя может я не правильно понял зачем вы использовали return false;
+      });
 });
