@@ -132,16 +132,32 @@ $(function(){
 		});
 
 		//call-popap
-		$('#fast-call').submit(function(event) {
+		// $('#fast-call').submit(function() {
+    //     $("#thx").css('margin-left', -$("#thx").outerWidth() / 2);
+    //     $("#thx").fadeIn(500);
+    //   });
+		$('#fast-call').submit(function() {
+		  $.ajax({
+		    type: $(this).attr('method'),
+		    url: $(this).attr('action'),
+		    data: $(this).serialize('#popap-question'),
+		    success: function(data) {
+		      $.fancybox({
+		        // href: '#popap-question',
+		        openEffect: 'elastic',
+		        closeEffect: 'elastic',
+		        afterLoad: function() {
+		          setTimeout(function() {
+		            parent.$.fancybox.close({
+		              closeEffect: 'elastic'
+		            });
+		          }, 3000);
+		        }
+		      });
 
-        $("#thx").css('margin-left', -$("#thx").outerWidth() / 2); // Выравниваем по центру окно относительно его ширины
+		    }
+		  });
+		});
 
-        $("#thx").fadeIn(500); // Показываем окно
 
-        setTimeout(function() {
-          $("#thx").fadeOut(500); // Скрываем его
-        }, 5000); // 5000 = 5 секунд
-
-        // Отменяет отправку формы. Это вместо retrun false; Хотя может я не правильно понял зачем вы использовали return false;
-      });
 });
