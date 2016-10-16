@@ -597,10 +597,10 @@
   &::after {
     content: '';
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: 0;
-    width: 5px;
-    height: 6px;
+    width: 6px;
+    height: 5px;
     background: url($img-dir + 'see-all-icon.png') 0 0 no-repeat;
   }
 

@@ -121,7 +121,7 @@ $(function(){
         $('.js-second_block').removeClass('is-visible');
     });
 
-	//readmore
+	//readmore filter
 		$('.filter-goods_list').readmore({
 			speed: 200,
 			moreLink: '<a href="#" class="c-show-all c-show-all--left">показать все</a>',
@@ -131,33 +131,14 @@ $(function(){
 			startOpen: false
 		});
 
-		//call-popap
-		// $('#fast-call').submit(function() {
-    //     $("#thx").css('margin-left', -$("#thx").outerWidth() / 2);
-    //     $("#thx").fadeIn(500);
-    //   });
-		$('#fast-call').submit(function() {
-		  $.ajax({
-		    type: $(this).attr('method'),
-		    url: $(this).attr('action'),
-		    data: $(this).serialize('#popap-question'),
-		    success: function(data) {
-		      $.fancybox({
-		        // href: '#popap-question',
-		        openEffect: 'elastic',
-		        closeEffect: 'elastic',
-		        afterLoad: function() {
-		          setTimeout(function() {
-		            parent.$.fancybox.close({
-		              closeEffect: 'elastic'
-		            });
-		          }, 3000);
-		        }
-		      });
-
-		    }
-		  });
+	//readmore text
+		$('.js-readmore').readmore({
+			speed: 200,
+			moreLink: '<a href="#" class="c-show-all">показать все</a>',
+			lessLink: '<a href="#" class="c-show-all c-show-all--up">скрыть список</a>',
+			embedCSS: true,
+			blockCSS: 'display: block; width: 100%;',
+			startOpen: false
 		});
-
 
 });

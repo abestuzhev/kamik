@@ -679,7 +679,7 @@
 
   &--up {
     padding-top: 15px;
-    margin-top: 20px;
+    // margin-top: 20px;
     padding-bottom: 0;
 
     &::after {
@@ -862,4 +862,18 @@
     color: #6D8399;
 
   }
+}
+
+
+//readmore
+.c-readmore-small {
+  margin-bottom: 10px;
+  overflow: hidden;
+  max-height: 51px;
+}
+
+.c-readmore-big {
+  margin-bottom: 10px;
+  overflow: hidden;
+  max-height: 153px;
 }

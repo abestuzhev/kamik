@@ -445,6 +445,7 @@
 
 .p-category {
   @include clear;
+  margin-bottom: 20px;
 }
 
 .l-filter {
@@ -1035,8 +1036,19 @@
   padding: 10px;
 }
 //
+.is-vis {
 
+}
 .popap-processed {
+  display: none;
+  // display: block;
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  z-index: 9999;
+  left: 40%;
+  top: 40%;
+  background-color: #00f;
 
   &_img {
     text-align: center;
