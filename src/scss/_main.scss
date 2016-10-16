@@ -1040,18 +1040,24 @@
 
 }
 .popap-processed {
-  display: none;
-  // display: block;
-  width: 500px;
-  height: 400px;
-  position: fixed;
-  z-index: 9999;
-  left: 40%;
-  top: 40%;
-  background-color: #00f;
 
   &_img {
+    position: relative;
     text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 32px;
+      margin-left: -16px;
+      height: 7px;
+      background: url('../img/service-icon-orange.png') 0 0 no-repeat;
+    }
+
 
     img {
       max-width: 100%;

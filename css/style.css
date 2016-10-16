@@ -2072,24 +2072,28 @@ input[type="checkbox"] {
   height: 100px;
   padding: 10px; }
 
-.popap-processed {
-  display: none;
-  width: 500px;
-  height: 400px;
-  position: fixed;
-  z-index: 9999;
-  left: 40%;
-  top: 40%;
-  background-color: #00f; }
-  .popap-processed_img {
-    text-align: center; }
-    .popap-processed_img img {
-      max-width: 100%;
-      height: auto; }
-  .popap-processed_text {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.2; }
+.popap-processed_img {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+  .popap-processed_img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 32px;
+    margin-left: -16px;
+    height: 7px;
+    background: url("../img/service-icon-orange.png") 0 0 no-repeat; }
+  .popap-processed_img img {
+    max-width: 100%;
+    height: auto; }
+
+.popap-processed_text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2; }
 
 .popap-discount_title {
   white-space: nowrap; }

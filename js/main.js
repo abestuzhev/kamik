@@ -7,6 +7,7 @@ $(function(){
 	});
 
 	$('.fancybox').fancybox({
+		maxWidth: '383px',
 		fitToView	: false,
 		autoSize	: true,
 		scrolling: 'no'
