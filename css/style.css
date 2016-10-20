@@ -2248,7 +2248,7 @@ input[type="checkbox"] {
   border-right: 2px solid #9a9a9a;
   border-right: 2px solid rgba(154, 154, 154, 0.25);
   box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.15);
-  visibility: hidden; }
+  display: none; }
   .submenu-one_item {
     position: relative;
     font-size: 18px;
@@ -2294,7 +2294,7 @@ input[type="checkbox"] {
   border-right: 2px solid rgba(154, 154, 154, 0.25);
   width: 210%;
   box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.15);
-  visibility: hidden; }
+  display: none; }
   .submenu-two_column {
     display: inline-block; }
   .submenu-two_item {
@@ -2333,7 +2333,7 @@ input[type="checkbox"] {
   top: 0;
   left: 100%;
   padding: 20px 30px;
-  visibility: hidden;
+  display: none;
   width: 100%;
   background-color: #fff;
   box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.15); }
@@ -2353,14 +2353,10 @@ input[type="checkbox"] {
     .submenu-three_link:hover {
       text-decoration: underline; }
 
-.header-nav_item:hover .submenu-one {
-  visibility: visible; }
-
-.submenu-one_item:hover .submenu-two {
-  visibility: visible; }
-
+.header-nav_item:hover .submenu-one,
+.submenu-one_item:hover .submenu-two,
 .submenu-two_item:hover .submenu-three {
-  visibility: visible; }
+  display: block; }
 
 .footer {
   background: url("../img/footer-bg.jpg") left top no-repeat;
