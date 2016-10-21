@@ -635,6 +635,13 @@ input[type="checkbox"] {
     content: '';
     display: block;
     clear: both; }
+  .c-card-buy_title {
+    color: #6C8795;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 8px; }
   .c-card-buy_price-text {
     display: inline-block;
     font-family: "Exo 2";
@@ -2163,13 +2170,19 @@ input[type="checkbox"] {
     font-size: 24px;
     margin-bottom: 20px; }
   .popap-buy_price {
-    margin-bottom: 14px;
-    text-transform: uppercase; }
-    .popap-buy_price span {
-      color: #EF5532;
-      text-transform: lowercase; }
+    margin-bottom: 22px;
+    vertical-align: middle; }
     .popap-buy_price-sum {
+      color: #EF5532;
       font-size: 36px; }
+    .popap-buy_price-text {
+      color: #242424;
+      text-transform: uppercase;
+      margin-right: 10px;
+      position: relative;
+      top: -3px; }
+    .popap-buy_price-ruble {
+      color: #EF5532; }
   .popap-buy-call {
     border-top: 1px solid #d5d5d5;
     padding: 20px 0;

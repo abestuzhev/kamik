@@ -1118,16 +1118,24 @@
   }
 
   &_price {
-    margin-bottom: 14px;
-    text-transform: uppercase;
-
-    span {
-      color: #EF5532;
-      text-transform: lowercase;
-    }
+    margin-bottom: 22px;
+     vertical-align: middle;
 
     &-sum {
+      color: #EF5532;
       font-size: 36px;
+    }
+
+    &-text {
+      color: #242424;
+      text-transform: uppercase;
+     margin-right: 10px;
+     position: relative;
+     top: -3px;
+    }
+
+    &-ruble {
+      color: #EF5532;
     }
   }
 

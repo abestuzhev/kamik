@@ -700,6 +700,15 @@
   border-bottom: 1px solid #d5d5d5;
   // margin-bottom: 20px;
 
+  &_title {
+    color: #6C8795;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
   &_price-text {
     display: inline-block;
     font-family: "Exo 2";
