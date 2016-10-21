@@ -725,8 +725,7 @@
 
 
   &_section {
-    height: 100%;
-    width: 75px;
+    // height: 100%;
     position: absolute;
     right: 0;
     top: 50px;
@@ -738,5 +737,36 @@
     float: none;
     margin-left: 234px;
     padding-right: 74px;
+  }
+
+  &-action {
+
+    &_text {
+      display: inline-block;
+      color: #909090;
+      font-family: "Fira Sans";
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding-left: 24px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 20px;
+        height: 24px;
+        background: url($img-dir + 'c-basket-delete.png') 0 0 no-repeat;
+        background-size: 20px 22px;
+      }
+    }
+  }
+
+  &_item {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
   }
 }

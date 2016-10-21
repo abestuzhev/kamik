@@ -653,8 +653,6 @@ input[type="checkbox"] {
   .c-card-buy .c-menu_item {
     margin-right: 20px; }
   .c-card-buy_section {
-    height: 100%;
-    width: 75px;
     position: absolute;
     right: 0;
     top: 50px; }
@@ -663,6 +661,28 @@ input[type="checkbox"] {
     float: none;
     margin-left: 234px;
     padding-right: 74px; }
+  .c-card-buy-action_text {
+    display: inline-block;
+    color: #909090;
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-left: 24px;
+    position: relative; }
+    .c-card-buy-action_text::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 20px;
+      height: 24px;
+      background: url("../img/c-basket-delete.png") 0 0 no-repeat;
+      background-size: 20px 22px; }
+  .c-card-buy_item {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px; }
 
 @font-face {
   font-family: 'Exo 2 Condensed';
