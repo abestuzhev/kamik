@@ -1086,23 +1086,69 @@
     left: -30px;
 }
 
-
-//fast-call
-#fast-call {
-
+.fancybox-skin {
+  background-color: #fff;
 }
-
-#fast-call-btn {
-
-}
-
-#thx {
-  position: fixed;
-  width: 200px;
-  left: 50%;
-  bottom: 50%;
-  padding: 50px 100px;
-  border: 3px solid #eee;
-  background-color: red;
+.popap-buy {
+  display: none;
+  width: 690px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+  height: auto;
+  @include clear;
   text-align: center;
+  font-size: 13px;
+  background-color: #fff;
+
+  &_title {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  &_total {
+    background-color: #f0f0f0;
+  }
+
+  &_total {
+    padding: 20px 0;
+    padding-bottom: 28px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &_price {
+    margin-bottom: 14px;
+    text-transform: uppercase;
+
+    span {
+      color: #EF5532;
+      text-transform: lowercase;
+    }
+
+    &-sum {
+      font-size: 36px;
+    }
+  }
+
+  &-call {
+    border-top: 1px solid #d5d5d5;
+    padding: 20px 0;
+    margin: 20px 0;
+    margin-bottom: 0;
+
+    &_title {
+      font-family: 'Exo 2 Condensed', sans-serif;
+      color: #242424;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-right: 16px;
+      margin-bottom: 14px;
+    }
+
+    &_text {
+      padding: 0 24%;
+    }
+  }
 }

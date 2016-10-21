@@ -690,3 +690,44 @@
 
   }//_count
 }
+
+////
+.c-card-buy {
+  position: relative;
+  text-align: left;
+  @include clear;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  // margin-bottom: 20px;
+
+  &_price-text {
+    display: inline-block;
+    font-family: "Exo 2";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;;
+    margin-right: 4px;
+    color: #000;
+  }
+
+  .c-menu_item {
+    margin-right: 20px;
+  }
+
+
+  &_section {
+    height: 100%;
+    width: 75px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+
+
+  &_body {
+    padding: 12px 0;
+    float: none;
+    margin-left: 234px;
+    padding-right: 74px;
+  }
+}
