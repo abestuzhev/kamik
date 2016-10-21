@@ -2162,6 +2162,8 @@ input[type="checkbox"] {
   .popap-buy_title {
     text-align: center;
     margin-bottom: 14px; }
+    .popap-buy_title img {
+      width: 33%; }
   .popap-buy_total {
     background-color: #f0f0f0; }
   .popap-buy_total {
